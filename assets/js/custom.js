@@ -264,7 +264,7 @@ function multiSelectChanged(type) {
 
 var input = document.querySelector("#phoneNumber");
 intlTelIn = window.intlTelInput(input, {
-    utilsScript: "{{ site.baseurl }}/assets/js/intl-tel-input/build/js/utils.js",
+    utilsScript: "{{ site.url }}{{ site.baseurl }}/assets/js/intl-tel-input/build/js/utils.js",
     initialCountry: 'auto',
     nationalMode: false,
     customPlaceholder: function (selectedCountryPlaceholder, selectedCountryData) {
