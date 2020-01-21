@@ -1,0 +1,990 @@
+body {
+    background: #0e0e12;
+    font-size: 100%;
+    font-family: 'open sans', sans-serif;
+    color: #222;
+    padding: 0;
+    margin: 0
+}
+
+@media only screen and (min-width:320px) and (max-width:772px) {
+    header {
+        padding: 10px 15px 0 15px;
+
+    }
+
+    .banner-slider {
+        position: relative
+    }
+
+    .menu {
+        position: relative
+    }
+
+    .menu-mobile a {
+        display: block
+    }
+
+    .sub-menu {
+        position: relative
+    }
+
+    .sub-menu li {
+        width: auto
+    }
+
+    .feedblock {
+        width: 100%
+    }
+
+    .tranier-view img,
+    .view-note {
+        margin: 0 auto 15px;
+        display: block
+    }
+
+    .red-btn {
+        float: left !important;
+        margin-top: 15px
+    }
+
+    footer ul {
+        width: 100%;
+        margin-right: 3%;
+        margin-bottom: 15px
+    }
+
+    .contact-link {
+        width: 85%
+    }
+
+    .inner-page .width-50 {
+        width: 100% !important;
+        float: none !important
+    }
+
+    .inner-page .flex-center {
+        display: block
+    }
+
+    .tran-img {
+        position: relative;
+        width: 100%
+    }
+
+    .round-gray {
+        width: 500px;
+        height: 500px;
+        left: -20px
+    }
+
+    .broadcast-bg img {
+        height: 400px
+    }
+
+    .home-signup {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        top: 0;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .home-signup .button {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .home-signup .button button {
+        margin-bottom: 15px
+    }
+
+    .home-session .width-50 {
+        width: 100% !important;
+        float: none !important
+    }
+
+    .home-session .width-50 a img {
+        text-align: center;
+        display: block;
+        margin: auto
+    }
+
+    footer {
+        padding: 150px 0 15px 15px
+    }
+
+    .traniee-block {
+        display: block
+    }
+
+    .copy-right {
+        padding-left: 15px;
+        box-sizing: border-box;
+        position: relative;
+        top: 0;
+        padding-bottom: 0
+    }
+
+    .copy-right ul {
+        display: block
+    }
+
+    .copy-right ul li {
+        float: none;
+        margin: 0 0 5px 0
+    }
+
+    .copy-right p {
+        float: none;
+        text-align: left;
+        margin-bottom: 5px
+    }
+
+    .mobile-login {
+        display: block
+    }
+
+    .tranier-session img {
+        width: 100%
+    }
+
+    .tranier-payment-session img {
+        width: 90%
+    }
+
+    .round-gray {
+        width: 500px;
+        height: 500px;
+        left: 0;
+        top: 60px;
+        margin-bottom: 70px
+    }
+
+    .contact-link {
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 28%;
+        transform: translateY(-50%)
+    }
+
+    .link-session img.link-banner {
+        width: 100%;
+        position: relative;
+        top: 390px;
+        height: 400px
+    }
+
+    .link-session {
+        background: #870509;
+        min-height: 660px
+    }
+
+    .max-width-section-800 {
+        width: 90%
+    }
+
+    .testimonials-inner {
+        align-items: flex-start
+    }
+
+    .userouter-img {
+        width: 70px;
+        height: 70px
+    }
+
+    .testimonials-inner {
+        height: auto
+    }
+
+    .userImage {
+        box-shadow: 0 0 0 5px #2f1818;
+        position: relative;
+        top: 7px;
+        left: 7px
+    }
+
+    .home-menu-top header {
+        padding: 10px 4%
+    }
+
+    .reverse-mobile-view {
+        display: flex !important;
+        flex-direction: column-reverse
+    }
+
+    .reverse-mobile-view .round-gray {
+        top: -60px;
+        left: -45px;
+        border-radius: 50%;
+        width: 120%;
+        height: 450px
+    }
+
+    .reverse-mobile-view {
+        overflow-x: hidden
+    }
+
+    /*.instagram-block {
+        width: 125px;
+        height: 125px;
+    }*/
+
+    .reverse-mobile-view img {
+        position: relative;
+        top: 100px
+    }
+
+    .reverse-mobile-view .round-gray p {
+        width: 75% !important;
+        position: relative;
+        top: 75px
+    }
+
+    .flex-center .margin-left-5 {
+        margin-left: 0
+    }
+
+    .broadcast-bg img {
+        height: 350px
+    }
+
+    .tranier-session p {
+        width: 100%;
+        min-width: 75%
+    }
+
+    .panel-body {
+        margin-right: inherit;
+        min-height: auto
+    }
+
+    .padright10 {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+
+    .padleft10 {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+
+    .modal .copy-right {
+        top: 0
+    }
+
+    .width-85-mobile {
+        width: 85% !important
+    }
+
+    .pattern-bgsection {
+        min-height: 500px
+    }
+
+    .traiermoney-img img {
+        width: 80%
+    }
+
+    .home-signup {
+        height: 100vh;
+
+    }
+
+    .red-bg .round-gray {
+        width: 120%;
+        left: -45px;
+        height: 500px
+    }
+
+    .flex-center.red-bg {
+        overflow-x: hidden
+    }
+
+    .mobile-half {
+        width: 90% !important
+    }
+
+    .round-gray h1 {
+        width: 75%;
+        padding-left: 40px
+    }
+
+    .trending-section {
+        padding: 0 20px
+    }
+
+    .inner-session.two .side-one {
+        left: calc(100% - 90%)
+    }
+
+    .inner-session.two .side-two {
+        right: calc(100% - 90%)
+    }
+
+    .pricing-pannel {
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+    .blog-section {
+        max-width: none;
+    }
+
+}
+
+@media only screen and (min-width:320px) and (max-width:370px) {
+    .mommy-pg .logo img {
+
+        width: 76px;
+        height: auto;
+        margin-top: 8px;
+    }
+
+    .mobileapp_storeicon .img {
+        width: 100%;
+        height: 20px !important;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:780px) {
+    header ul li {
+        margin: 0 1rem 0 1rem
+    }
+
+    .menu {
+        padding: .5rem 1rem;
+        background: #0e0e12;
+        width: 60%;
+        max-width: 200px;
+        max-height: 100px;
+        border-radius: 0 0 0 8px;
+        height: 100vh;
+        position: fixed;
+        top: 105px;
+        bottom: 0;
+        right: -4000px;
+        display: table;
+        transition: .5s
+    }
+
+    .menu li {
+        float: none;
+        margin: 0 0 25px
+    }
+
+    .menu li a {
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        color: #fff;
+        display: block
+    }
+
+    .mobile-view {
+        display: block;
+        background: url(../images/mobile-menu.svg) no-repeat left center;
+        width: 24px;
+        height: 24px;
+        text-indent: -999em;
+        display: block;
+        float: left
+    }
+
+    .mobileMenu .mobile-view {
+        background: url(../images/close-bg.svg) no-repeat left center
+    }
+
+    .mobileMenu .menu {
+        right: 0
+    }
+
+    .mobileMenu {
+        overflow-y: hidden
+    }
+
+    .mobileMenu ul {
+        right: -4000px
+    }
+
+    .menumobileview {
+        width: 100px;
+        position: absolute;
+        right: 0;
+        top: 15px
+    }
+
+    .menumobileview .login {
+        text-indent: 0;
+        color: #df1f26;
+        font-family: 'open sans', sans-serif;
+        font-weight: 700;
+        float: left;
+        margin: 0 15px 0 0;
+        text-decoration: none;
+        font-size: 16px
+    }
+
+    li.login {
+        display: none
+    }
+
+    .menu .submenu {
+        position: inherit;
+        top: 0
+    }
+
+    .mobile-signup {
+        display: block
+    }
+
+    .mobile-signup a {
+        color: #df1f26 !important
+    }
+
+    .pad-left-3 {
+        padding: 0
+    }
+
+    .contact-link .form-field input {
+        width: 52%
+    }
+
+    .right-5 {
+        right: 0
+    }
+
+    .trending-box {
+        width: 100%
+    }
+
+    /*.instagram-block {
+        width: 125px;
+        height: 125px;
+    }*/
+
+    .blog-view {
+        width: 100%;
+        margin-right: 0
+    }
+
+    .contactus-form {
+        max-width: 80%;
+        display: table;
+        width: 80%;
+        position: relative;
+        right: 4%
+    }
+
+    .half-view-left,
+    .half-view-right {
+        width: 100%
+    }
+
+    .tranier-session p {
+        width: 90%
+    }
+
+
+    .dropdown-mobile {
+        background: url(../images/menu-arrow.svg) no-repeat 96% center
+    }
+
+    .pricing-mobile-view {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 101%;
+        top: 101px;
+        display: block
+    }
+
+    .panel-heading p {
+        margin-bottom: 20px
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1100px) {
+    .trending-box {
+        width: 45%
+    }
+
+    .trending-box:nth-child(3n+0) {
+        margin: 0 5% 4% 0
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+    .tranier-view img,
+    .view-note {
+        margin: 0 auto 15px;
+        display: block
+    }
+
+    .red-btn {
+        float: left !important;
+        margin-top: 15px
+    }
+
+    .inner-page .width-50 {
+        width: 100% !important;
+        float: none !important
+    }
+
+    .inner-page .flex-center {
+        display: block
+    }
+
+    .tran-img {
+        position: relative;
+        width: 100%
+    }
+
+    .round-gray {
+        width: 500px;
+        height: 500px;
+        left: -20px;
+        top: 30px
+    }
+
+    .contact-link {
+        width: 45%
+    }
+
+    .broadcast-bg img {
+        height: 350px
+    }
+
+    .tranier-session p {
+        width: 100%;
+        min-width: 75%
+    }
+
+    .panel-body {
+        margin-right: inherit
+    }
+
+    .padright10 {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+
+    .padleft10 {
+        padding-right: 15px;
+        padding-left: 15px
+    }
+
+    .trainer-imgone img {
+        width: 60%
+    }
+
+    .pricing-pannel {
+        width: 45%
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:1279px) {
+
+    .tranier-view img,
+    .traniner-profile {
+        width: 50%
+    }
+
+    .book-tranier {
+        width: 50%;
+        max-width: inherit
+    }
+
+    .tranier-aval .width-45 {
+        width: 100% !important;
+        margin-bottom: 20px
+    }
+
+    .tranier-selection img.watcher {
+        height: 210px
+    }
+
+    .sub-menu li a {
+        padding: 20px 1rem
+    }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1279px) {
+    .messages-list {
+        height: 30vh !important
+    }
+
+    .recorder-video-page .message-container {
+        overflow: auto;
+        height: 47vh !important;
+        padding: 16px
+    }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1280px) {
+    .logo-msg {
+        margin-bottom: 15px
+    }
+
+    .login-fields {
+        margin-bottom: 10px
+    }
+
+    .form-group input.form-control {
+        height: 38px
+    }
+
+    .feedblock {
+        margin-right: 50px
+    }
+
+    .post-view-block {
+        width: 80%
+    }
+
+    .forgotpage .logo-msg {
+        margin-bottom: 90px
+    }
+
+    .forgotpage .login-fields {
+        margin-bottom: 90px
+    }
+
+    .session-name h2 {
+        margin: 0 7px 10px 0
+    }
+
+    #loginModal .modal-dialog,
+    #signUpModal .modal-dialog {
+        transform: translate(0, 90px);
+        margin-top: 10px
+    }
+
+    .chat-message {
+        top: 280px;
+        width: 70% !important
+    }
+
+    .session-name h2 {
+        width: 50px
+    }
+
+    .messages-list {
+        height: 44vh !important
+    }
+
+    .record-video-layout-left-session {
+        width: 77%
+    }
+
+    .chat-message.live-session-chat-message {
+        top: 340px
+    }
+
+    .live-session-chat-message .messages-list {
+        height: 36vh !important
+    }
+
+    .inner-session.two .side-one {
+        left: calc(100% - 84%)
+    }
+
+    .inner-session.two .side-two {
+        right: calc(100% - 84%)
+    }
+
+    .tranier-selection {
+        width: 350px
+    }
+
+    .round-gray {
+        height: 550px
+    }
+}
+
+@media only screen and (min-width:1281px) and (max-width:1366px) {
+    .logo-msg {
+        margin-bottom: 20px
+    }
+
+    .login-fields {
+        margin-bottom: 10px
+    }
+
+    .form-group input.form-control {
+        height: 40px
+    }
+
+    .feedblock {
+        width: 30%;
+        margin-right: 54px
+    }
+
+    .post-view-block {
+        width: 75%
+    }
+
+    .forgotpage .logo-msg {
+        margin-bottom: 110px
+    }
+
+    .forgotpage .login-fields {
+        margin-bottom: 110px
+    }
+
+    .sub-menu li a {
+        padding: 20px 2rem
+    }
+
+    .session-name h2 {
+        margin: 0 12px 10px 0
+    }
+
+    #loginModal .modal-dialog,
+    #signUpModal .modal-dialog {
+        transform: translate(0, 25px)
+    }
+
+    .chat-message {
+        top: 280px;
+        width: 70% !important
+    }
+
+    .session-name h2 {
+        width: 50px
+    }
+
+    .messages-list {
+        height: 30vh !important
+    }
+
+    .chat-message.live-session-chat-message {
+        top: 340px
+    }
+
+    .live-session-chat-message .messages-list {
+        height: 36vh !important
+    }
+
+    .inner-session.two .side-one {
+        left: calc(100% - 84%)
+    }
+
+    .inner-session.two .side-two {
+        right: calc(100% - 84%)
+    }
+
+    .session-subscriber {
+        height: 88vh
+    }
+
+    .tranier-selection {
+        width: 380px
+    }
+}
+
+@media only screen and (min-width:1367px) and (max-width:1440px) {
+    .feedblock {
+        margin-right: 55px
+    }
+
+    .post-view-block {
+        width: 75%
+    }
+
+    .session-name h2 {
+        margin: 0 25px 10px 0
+    }
+
+    .inner-session.two .side-one {
+        left: calc(100% - 80%)
+    }
+
+    .inner-session.two .side-two {
+        right: calc(100% - 80%)
+    }
+
+    .chat-message {
+        width: 75% !important;
+        top: 300px
+    }
+
+    .chat-message.live-session-chat-message {
+        top: 340px
+    }
+
+    .messages-list {
+        height: 34vh !important
+    }
+
+    .tranier-selection {
+        width: 400px
+    }
+}
+
+@media only screen and (min-width:1441px) and (max-width:1600px) {
+    .logo-msg {
+        margin-bottom: 80px
+    }
+
+    .login-fields {
+        margin-bottom: 10px
+    }
+
+    .button button {
+        height: 50px
+    }
+
+    .form-group input.form-control {
+        height: 45px
+    }
+
+    .forgotpage .logo-msg {
+        margin-bottom: 155px
+    }
+
+    .forgotpage .login-fields {
+        margin-bottom: 170px
+    }
+
+    .chat-message {
+        width: 75% !important;
+        top: 300px
+    }
+
+    .chat-message.live-session-chat-message {
+        top: 340px
+    }
+
+    .live-session-chat-message .messages-list {
+        height: 38vh !important
+    }
+
+    .messages-list {
+        height: 44vh !important
+    }
+}
+
+@media only screen and (min-width:1601px) and (max-width:1920px) {
+    .forgotpage .logo-msg {
+        margin-bottom: 90px
+    }
+
+    .forgotpage .login-fields {
+        margin-bottom: 90px
+    }
+
+    .recorded-video-container {
+        height: 92vh !important
+    }
+
+    .session-subscriber {
+        height: 92vh !important
+    }
+
+    .session-subscriber {
+        height: 92vh !important
+    }
+
+    .chat-message {
+        width: 74% !important
+    }
+
+    .inner-session.two .side-one {
+        left: calc(100% - 74%)
+    }
+
+    .inner-session.two .side-two {
+        right: calc(100% - 74%)
+    }
+
+    .tranier-selection {
+        width: 550px
+    }
+}
+
+@media only screen and (min-width:1920px) and (max-width:3000px) {
+    .forgotpage .logo-msg {
+        margin-bottom: 90px
+    }
+
+    .forgotpage .login-fields {
+        margin-bottom: 90px
+    }
+
+    .tranier-selection {
+        width: 550px
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:9000px) {
+
+    .menumobileview,
+    .mobile-signup,
+    .mobile-view {
+        display: none
+    }
+}
+
+@media only screen and (min-height:400px) and (max-height:767px) {
+
+    #loginModal .modal-dialog,
+    #signUpModal .modal-dialog {
+        transform: translate(0, 15px)
+    }
+
+    #loginModal,
+    #signUpModal {
+        overflow-y: auto
+    }
+}
+
+@media only screen and (min-width:3000px) and (max-width:6000px) {
+    .recorded-video-container {
+        height: 97vh !important
+    }
+
+    .session-subscriber {
+        height: 97vh !important
+    }
+
+    .session-subscriber {
+        height: 97vh !important
+    }
+
+    .inner-session.two .side-one {
+        left: calc(100% - 59%)
+    }
+
+    .inner-session.two .side-two {
+        right: calc(100% - 59%)
+    }
+
+    .tranier-selection {
+        width: 950px
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:1279px) {
+    .desktop-view-signup {
+        display: none;
+    }
+
+    .mobile-view-signup {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:1280px) and (max-width:9000px) {
+    .desktop-view-signup {
+
+        display: block;
+    }
+
+    .mobile-view-signup {
+        display: none;
+    }
+}
