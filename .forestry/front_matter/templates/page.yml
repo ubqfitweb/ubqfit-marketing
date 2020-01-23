@@ -21,3 +21,5 @@ fields:
     maxSize: 250
   label: Hero Video Landscape
   default: "/assets/images/hero_vid_landscape.mp4"
+pages:
+- index.html
