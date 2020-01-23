@@ -15,7 +15,7 @@ fields:
     maxSize: '250'
   label: Hero Video Portrait
   default: "/assets/images/hero_vid_portrait.mp4"
-- name: heroVideoLandscape
+- name: hero_video_landscape
   type: file
   config:
     maxSize: 250
