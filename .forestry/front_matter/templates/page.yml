@@ -21,5 +21,23 @@ fields:
     maxSize: 250
   label: Hero Video Landscape
   default: "/assets/images/hero_vid_landscape.mp4"
+- name: hero_video_title
+  type: textarea
+  default: Train live 1-on-1 or simply watch
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Hero Video Title
+- name: hero_video_description
+  type: textarea
+  default: Train when you want, where you want, without commitments.
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Hero Video Description
 pages:
 - index.html
