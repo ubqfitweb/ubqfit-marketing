@@ -39,5 +39,11 @@ fields:
     schema:
       format: markdown
   label: Hero Video Description
+- name: hero_video_button_label
+  type: text
+  config:
+    required: false
+  label: Hero Video Button Label
+  default: Watch Video
 pages:
 - index.html
