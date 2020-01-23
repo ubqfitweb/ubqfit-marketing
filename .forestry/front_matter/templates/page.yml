@@ -9,7 +9,7 @@ fields:
   label: layout
   hidden: true
   default: default
-- name: heroVideoPortrait
+- name: hero_video_portrait
   type: file
   config:
     maxSize: '250'
