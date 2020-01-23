@@ -1,4 +1,23 @@
 ---
 label: Page
 hide_body: true
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  hidden: true
+  default: default
+- name: heroVideoPortrait
+  type: file
+  config:
+    maxSize: '250'
+  label: Hero Video Portrait
+  default: "/assets/images/hero_vid_portrait.mp4"
+- name: heroVideoLandscape
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Landscape
+  default: "/assets/images/hero_vid_landscape.mp4"
