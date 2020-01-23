@@ -1,5 +1,7 @@
 ---
 layout: default
+heroVideoLandscape: "/assets/images/video/hero_vid_landscape.mp4"
+heroVideoPortrait: "/assets/images/video/hero_vid_portrait.mp4"
 ---
 <div class="containers">
     <div class="width-100 bg-gray">
@@ -9,7 +11,7 @@ layout: default
                     <video class="heroVideo portrait"
                         poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" muted playsinline
                         preload autoplay loop>
-                        <source src="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_portrait.mp4"
+                        <source src="{{ site.url }}{{ site.baseurl }}{{ page.heroVideoPortrait }}"
                             type="video/mp4" class="portrait">
                         Your browser does not support the video tag.
                     </video>
@@ -17,7 +19,7 @@ layout: default
                     <video class="heroVideo landscape"
                         poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" muted playsinline
                         preload autoplay loop>
-                        <source src="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_landscape.mp4"
+                        <source src="{{ site.url }}{{ site.baseurl }}{{ page.heroVideoLandscape }}"
                             type="video/mp4" class="landscape">
                         Your browser does not support the video tag.
                     </video>
