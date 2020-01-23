@@ -7,3 +7,27 @@ fields:
   label: layout
   default: default
   hidden: true
+- name: hero_image
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Image
+  default: "/assets/images/gift.jpg"
+- name: hero_image_title
+  type: textarea
+  default: The Gift That Keeps On Giving
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Hero Image Title
+- name: hero_image_description
+  type: textarea
+  default: Give someone the special gift of a live workout
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Hero Image Description
