@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _data/announcementBar.yml
   label: Announcement Bar
-  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
