@@ -1,9 +1,8 @@
 ---
 layout: default
-hero_image: ''
-hero_image_title: The Gift That Keeps On Giving
-hero_image_description: Give someone the special gift of a live workout
-
+hero_image: "/assets/images/gift.jpg"
+hero_image_title: "The Gift That Keeps On Giving"
+hero_image_description: "Give someone the special gift of a live workout"
 ---
 <div class="containers">
   <div class="download-app appinstall-view" id="download-app">
@@ -48,15 +47,15 @@ hero_image_description: Give someone the special gift of a live workout
                     <div class="overlay"
                       style="background-color:rgba(0,0,0,0.35);position:absolute;top:0;right:0;bottom:0;left:0;z-index:5;">
                     </div>
-                    <img class="heroVideo" src="{{ site.url }}{{ site.baseurl }}{{ Page.hero_image }}"
+                    <img class="heroVideo" src="{{ site.url }}{{ site.baseurl }}{{ page.hero_image }}"
                       alt="Image of Christmas" />
 
                     <div class="banner-tittle">
                       <h1>
-                        {{ Page.hero_image_title }}
+                        {{ page.hero_image_title }}
                       </h1>
                       <h2>
-                        {{ Page.hero_image_description }}
+                        {{ page.hero_image_description }}
                       </h2>
                     </div>
                   </div>
