@@ -31,3 +31,9 @@ fields:
     schema:
       format: markdown
   label: Hero Image Description
+- name: hero_image_new
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Image New
+  default: "/assets/images/gift2.jpg"
