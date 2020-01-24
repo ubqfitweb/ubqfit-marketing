@@ -79,3 +79,10 @@ fields:
     maxSize: 250
   label: Gift Three Background Image
   default: "/assets/images/watch-christmas.jpg"
+- name: gift_one_features
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Gift One Features
