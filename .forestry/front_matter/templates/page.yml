@@ -52,5 +52,15 @@ fields:
   label: Section One Image
   description: With poster image on the left and text content on the right
   default: "/assets/images/traniee-2x.png"
+- name: section_one_title
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Section One Title
+  description: With poster image on the left and text content on the right
 pages:
 - index.html
