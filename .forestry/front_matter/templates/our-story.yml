@@ -107,3 +107,5 @@ fields:
     schema:
       format: html-blocks
   label: Section Description
+pages:
+- ourstory.html
