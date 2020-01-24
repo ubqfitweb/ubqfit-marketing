@@ -47,7 +47,7 @@ fields:
   default: Watch Video
 - name: section_one_title
   type: textarea
-  default: ''
+  default: Train live 1-on-1 or simply watch.
   config:
     required: false
     wysiwyg: false
@@ -79,6 +79,7 @@ fields:
     required: false
   label: Section Two Title
   description: With poster image on the center and text content on the top
+  default: Get connected.
 - name: section_two_image
   type: file
   config:
