@@ -64,12 +64,13 @@ fields:
   default: "/assets/images/traniee-2x.png"
 - name: section_one_description
   type: textarea
-  default: ''
+  default: Book a 1-on-1 private or public session, where watchers can engage, donate,
+    and everyone becomes a part of an exciting fitness community.
   config:
     required: false
-    wysiwyg: false
+    wysiwyg: true
     schema:
-      format: markdown
+      format: html
   description: With poster image on the left and text content on the right
   label: Section One Description
 pages:
