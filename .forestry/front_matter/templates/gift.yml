@@ -31,3 +31,33 @@ fields:
     schema:
       format: markdown
   label: Hero Image Description
+- name: gift_one_amount
+  type: number
+  label: Gift One Amount
+  description: ''
+  default: '15'
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: gift_two_amount
+  type: number
+  label: Gift Two Amount
+  description: ''
+  default: '45'
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: gift_three_amount
+  type: number
+  label: Gift Three Amount
+  description: ''
+  default: '100'
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
