@@ -5,21 +5,32 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: text
-  name: hero_video_portrait
-  label: hero_video_portrait
-- type: text
-  name: hero_video_landscape
-  label: hero_video_landscape
+  hidden: true
+- name: hero_video_portrait
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Portrait
+  hidden: false
+  default: "/assets/images/hero_vid_portrait.mp4"
+- name: hero_video_landscape
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Landscape
+  default: "/assets/images/hero_vid_landscape.mp4"
 - type: text
   name: hero_video_title
-  label: hero_video_title
+  label: Hero Video Title
+  default: Our Story
 - type: text
   name: hero_video_description
-  label: hero_video_description
+  label: Hero Video Description
+  default: Learn how we got started.
 - type: text
   name: section_title
-  label: section_title
+  label: Section Title
+  default: About the Founder
 - type: text
   name: section_description
   label: section_description
