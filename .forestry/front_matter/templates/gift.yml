@@ -67,3 +67,15 @@ fields:
     maxSize: 250
   label: Gift One Background Image
   default: "/assets/images/gift3.jpg"
+- name: gift_two_background_image
+  type: file
+  config:
+    maxSize: 250
+  label: Gift Two Background Image
+  default: "/assets/images/gift.jpg"
+- name: gift_three_background_image
+  type: file
+  config:
+    maxSize: 250
+  label: Gift Three Background Image
+  default: "/assets/images/watch-christmas.jpg"
