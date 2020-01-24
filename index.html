@@ -6,19 +6,17 @@ hero_video_landscape: "/assets/images/hero_vid_landscape.mp4"
 hero_video_title: Live 1-on-1 Workouts
 hero_video_description: Train when you want, where you want, without commitments.
 hero_video_button_label: Watch Video
-
 section_one_image: "/assets/images/traniee.png"
-section_one_title: ""
-section_one_description: ""
-
-section_two_image: "/assets/images/traniee.png"
-section_two_title: ""
-section_two_description: ""
-
-section_three_image: "/assets/images/traniee.png"
-section_three_title: ""
-section_three_description: ""
-
+section_one_title: Train live 1-on-1 or simply watch.
+section_one_description: Book a 1-on-1 private or public session, where watchers can
+  engage, donate, and everyone becomes a part of an exciting fitness community.
+section_two_title: Get connected.
+section_two_image: "/assets/images/watch.png"
+section_two_description: Power your workouts with real time fitness data.
+section_three_title: Trainers, make money.
+section_three_image: "/assets/images/tranier.png"
+section_three_description: Lead a fitness event or accept 1-on-1 training sessions
+  when it works for you. Grow your fitness community with UBQFIT.
 
 ---
 <div class="containers">
@@ -62,52 +60,47 @@ section_three_description: ""
             <div class="row margin-0 home-session">
                 <div class="tranier-session width-100 margin-bottom-50">
                     <h2 style="margin-top:32px;padding-left: 16px;padding-right: 16px;">
-                        Train live 1-on-1 or simply watch.
+                        {{ page.section_one_title }}
                     </h2>
                     <div class="traniee-block bor-bot-7">
                         <div class="width-50 float-left mobile-home-img">
                             <a href="javascript:void(0)">
-                                <img src="{{ site.url }}{{ site.baseurl }}/assets/images/traniee.png"
+                                <img src="{{ site.url }}{{ site.baseurl }}{{ page.section_one_image }}"
                                     style="width: 100%;max-width: 500px;" class="margin-left-5">
                             </a>
                         </div>
                         <div class="width-50 float-right">
                             <p class="right-5">
-                                Book a 1-on-1 private or public session, where watchers can engage, donate, and everyone
-                                becomes a part of
-                                an
-                                exciting fitness community.
+                                {{ page.section_one_description }}
                             </p>
                         </div>
                     </div>
                     <div class="connecting-session pad-top-40">
                         <h2>
-                            Get connected.
+                            {{ page.section_two_title }}
                         </h2>
                         <p>
-                            Power your workouts with real time fitness data.
+                            {{ page.section_two_description }}
                         </p>
 
                         <div class="width-100 bg-fc center bor-bot-7 watch-img">
                             <a href="javascript:void(0)">
-                                <img src="{{ site.url }}{{ site.baseurl }}/assets/images/watch.png">
+                                <img src="{{ site.url }}{{ site.baseurl }}{{ page.section_two_image }}">
                             </a>
                         </div>
                     </div>
                     <div class="traniee-block padding-top-100">
                         <div class="width-50 float-left">
                             <h2>
-                                Trainers, make money.
+                                {{ page.section_three_title }}
                             </h2>
                             <p class="pad-left-3">
-                                Lead a fitness event or accept 1-on-1 training
-                                sessions when it works for you. Grow your
-                                fitness community with UBQFIT.
+                                {{ page.section_three_description }}
                             </p>
                         </div>
                         <div class="width-50 float-right traiermoney-img">
                             <a href="javascript:void(0)">
-                                <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tranier.png"
+                                <img src="{{ site.url }}{{ site.baseurl }}{{ page.section_three_image }}"
                                     class="bor-rad-20">
                             </a>
                         </div>
