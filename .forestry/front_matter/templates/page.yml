@@ -106,5 +106,12 @@ fields:
       format: markdown
   label: Section Three Title
   description: With poster image on the right and text content on the left
+- name: section_three_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section Three Image
+  description: With poster image on the right and text content on the left
+  default: "/assets/images/tranier.png"
 pages:
 - index.html
