@@ -3,8 +3,11 @@ layout: default
 hero_image: "/assets/images/gift2.jpg"
 hero_image_title: The Gift That Keeps On Giving
 hero_image_description: Give someone the special gift of a live workout
+gift_one_background_image: "/assets/images/gift3.jpg"
 gift_one_amount: "15"
+gift_two_background_image: "/assets/images/gift.jpg"
 gift_two_amount: "45"
+gift_three_background_image: "/assets/images/watch-christmas.jpg"
 gift_three_amount: "100"
 
 ---
@@ -78,7 +81,7 @@ gift_three_amount: "100"
                     <div class="panel panel-danger panel-pricing"
                       style="background-color: white;border:1px solid #AAAAAA; border-radius:8px;">
                       <div class="panel-heading"
-                        style="background-image: url('{{ site.url }}{{ site.baseurl }}/assets/images/gift3.jpg');background-size:cover;background-position:center center; min-height:200px;">
+                        style="background-image: url('{{ site.url }}{{ site.baseurl }}{{ page.gift_one_background_image }}');background-size:cover;background-position:center center; min-height:200px;">
 
                         <!-- <h4 style="font-size:3rem;">🎄🎁</h4> -->
                         <!-- <p style="font-size:1.5rem;">$15</p> -->
@@ -133,7 +136,7 @@ gift_three_amount: "100"
                     <div class="panel panel-danger panel-pricing"
                       style="background-color: white;border:1px solid #AAAAAA; border-radius:8px;">
                       <div class="panel-heading"
-                        style="background-image: url('{{ site.url }}{{ site.baseurl }}/assets/images/gift.jpg');background-size:cover;background-position:center center; min-height:200px;">
+                        style="background-image: url('{{ site.url }}{{ site.baseurl }}{{ page.gift_two_background_image }}');background-size:cover;background-position:center center; min-height:200px;">
 
                         <!-- <h4 style="font-size:3rem;">🎄🎁🎁🎁</h4> -->
                         <!-- <p style="font-size:1.5rem;">$45</p> -->
@@ -183,7 +186,7 @@ gift_three_amount: "100"
                     <div class="panel panel-danger panel-pricing"
                       style="background-color: white;border:1px solid #AAAAAA; border-radius:8px;">
                       <div class="panel-heading"
-                        style="background-image: url('{{ site.url }}{{ site.baseurl }}/assets/images/watch-christmas.jpg');background-size:cover;background-position:center center; min-height:200px;">
+                        style="background-image: url('{{ site.url }}{{ site.baseurl }}{{ page.gift_three_background_image }}');background-size:cover;background-position:center center; min-height:200px;">
                         <!-- <h4 style="font-size:3rem; z-index:10; position:relative;">🎄🎁🎁🎁🎁</h4> -->
                         <!-- <p style="font-size:1.5rem; z-index:10; position:relative;">$100</p> -->
                       </div>
