@@ -86,3 +86,17 @@ fields:
     min: 
     max: 
   label: Gift One Features
+- name: gift_two_features
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Gift Two Features
+- name: gift_three_features
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Gift Three Features
