@@ -1,5 +1,11 @@
 ---
 layout: default
+hero_video_portrait: "/assets/images/hero_vid_portrait.mp4"
+hero_video_landscape: "/assets/images/hero_vid_landscape.mp4"
+hero_video_title: Our Story
+hero_video_description: Learn how we got started.
+section_title: About the Founder
+section_description: sample
 ---
 <div class="containers">
   <!-- // app install page view -->
@@ -37,23 +43,23 @@ layout: default
                   <video class="heroVideo portrait"
                     poster="{{ site.url }}{{ site.baseurl }}/assets/images/img/workout.jpg" muted playsinline preload
                     autoplay loop>
-                    <source src="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_portrait.mp4"
+                    <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait }}"
                       type="video/mp4" class="portrait">
                     Your browser does not support the video tag.
                   </video>
                   <video class="heroVideo landscape"
                     poster="{{ site.url }}{{ site.baseurl }}/assets/images/img/workout.jpg" muted playsinline preload
                     autoplay loop>
-                    <source src="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_landscape.mp4"
+                    <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape }}"
                       type="video/mp4" class="landscape">
                     Your browser does not support the video tag.
                   </video>
                   <div class="banner-tittle">
                     <h1>
-                      Our Story
+                      {{ page.hero_video_title }}
                     </h1>
                     <h2 class="margin-bottom-15">
-                      Learn how we got started.
+                      {{ page.hero_video_description }}
                     </h2>
                     <!-- <button class="primary-btn"> Watch Video </button> -->
                   </div>
