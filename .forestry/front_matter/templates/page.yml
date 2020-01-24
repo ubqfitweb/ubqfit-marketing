@@ -96,5 +96,15 @@ fields:
       format: html
   label: Section Two Description
   description: With poster image on the center and text content on the top
+- name: section_three_title
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Section Three Title
+  description: With poster image on the right and text content on the left
 pages:
 - index.html
