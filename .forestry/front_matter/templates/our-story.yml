@@ -31,6 +31,79 @@ fields:
   name: section_title
   label: Section Title
   default: About the Founder
-- type: text
-  name: section_description
-  label: section_description
+- name: section_description
+  type: textarea
+  default: |-
+    <p>
+
+     Ellie grew up living all over the world, from the Middle East to Asia and Canada. Throughout it all,
+
+     her family mantra stayed consistent: succeeding professionally meant being happy with your life. </p>
+
+    </p>
+
+    <p>
+
+     She
+
+     studied economics in Canada, worked in real estate, consulted at Deloitte, earned her MBA from
+
+     Columbia Business School and wound up in Investment Banking and Trading at Morgan Stanley on Wall
+
+     Street. But while her career flourished during those years, she didn’t feel personally fulfilled. She
+
+     had compromised her core values—family, friends, community and most importantly her health and
+
+     fitness—while work engulfed her life.
+
+    </p>
+
+    <p>
+
+     After more than a decade of that lifestyle, she changed tracks
+
+     and began pursuing a healthier, happier life and raising a family. One marriage and two kids later,
+
+     she realized once again just how hard it was to commit to being fit and healthy: it’s always a battle
+
+     to self-motivate and commit the necessary time to the things that really matter. Ellie sought out a
+
+     solution for over a year, and that was UBQFIT.
+
+    </p>
+
+    <p>
+
+     UBQFIT is a barrier-smashing community of like-minded people interested in enhancing their health and
+
+     fitness while supporting others to do the same. It’s a social club, a personal motivator and a virtual
+
+     gym all wrapped into one. UBQFIT’s mission is to be an expansive, welcoming, tight-knit community that
+
+     provides the necessary tools to make health and fitness fun and engaging. It incorporates your
+
+     activity data, provides one-on-one coaching and support AND a platform for others to cheer you on in
+
+     real-time. For trainers, UBQFIT creates new opportunities to find clients and fill in gaps in their
+
+     schedules, transcending the confines of physical gyms and geographical limitations.
+
+    </p>
+
+    <p class="padding-bottom-50">
+
+     UBQFIT is fun and
+
+     engaging for people of all strengths, budgets and experience. This is fitness without walls—your own
+
+     personal gym, that includes your community and your fitness data any time of day, anywhere that’s
+
+     convenient for you!
+
+    </p>
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Section Description
