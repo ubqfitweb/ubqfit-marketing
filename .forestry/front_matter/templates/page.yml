@@ -73,5 +73,11 @@ fields:
       format: html
   description: With poster image on the left and text content on the right
   label: Section One Description
+- name: section_two_title
+  type: text
+  config:
+    required: false
+  label: Section Two Title
+  description: With poster image on the center and text content on the top
 pages:
 - index.html
