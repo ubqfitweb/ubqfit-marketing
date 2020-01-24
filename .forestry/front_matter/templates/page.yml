@@ -98,7 +98,7 @@ fields:
   description: With poster image on the center and text content on the top
 - name: section_three_title
   type: textarea
-  default: ''
+  default: Trainers, make money.
   config:
     required: false
     wysiwyg: false
