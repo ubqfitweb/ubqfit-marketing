@@ -79,5 +79,22 @@ fields:
     required: false
   label: Section Two Title
   description: With poster image on the center and text content on the top
+- name: section_two_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section two Image
+  description: With poster image on the center and text content on the top
+  default: "/assets/images/watch.png"
+- name: section_two_description
+  type: textarea
+  default: Power your workouts with real time fitness data.
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html
+  label: Section Two Description
+  description: With poster image on the center and text content on the top
 pages:
 - index.html
