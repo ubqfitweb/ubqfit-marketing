@@ -31,6 +31,12 @@ fields:
     schema:
       format: markdown
   label: Hero Image Description
+- name: gift_one_background_image
+  type: file
+  config:
+    maxSize: 250
+  label: Gift One Background Image
+  default: "/assets/images/gift3.jpg"
 - name: gift_one_amount
   type: number
   label: Gift One Amount
@@ -41,6 +47,19 @@ fields:
     min: 
     max: 
     step: 
+- name: gift_one_features
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Gift One Features
+- name: gift_two_background_image
+  type: file
+  config:
+    maxSize: 250
+  label: Gift Two Background Image
+  default: "/assets/images/gift.jpg"
 - name: gift_two_amount
   type: number
   label: Gift Two Amount
@@ -51,6 +70,19 @@ fields:
     min: 
     max: 
     step: 
+- name: gift_two_features
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Gift Two Features
+- name: gift_three_background_image
+  type: file
+  config:
+    maxSize: 250
+  label: Gift Three Background Image
+  default: "/assets/images/watch-christmas.jpg"
 - name: gift_three_amount
   type: number
   label: Gift Three Amount
@@ -61,38 +93,6 @@ fields:
     min: 
     max: 
     step: 
-- name: gift_one_background_image
-  type: file
-  config:
-    maxSize: 250
-  label: Gift One Background Image
-  default: "/assets/images/gift3.jpg"
-- name: gift_two_background_image
-  type: file
-  config:
-    maxSize: 250
-  label: Gift Two Background Image
-  default: "/assets/images/gift.jpg"
-- name: gift_three_background_image
-  type: file
-  config:
-    maxSize: 250
-  label: Gift Three Background Image
-  default: "/assets/images/watch-christmas.jpg"
-- name: gift_one_features
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
-  label: Gift One Features
-- name: gift_two_features
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
-  label: Gift Two Features
 - name: gift_three_features
   type: list
   config:
