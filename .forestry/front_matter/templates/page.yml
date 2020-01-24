@@ -114,5 +114,16 @@ fields:
   label: Section Three Image
   description: With poster image on the right and text content on the left
   default: "/assets/images/tranier.png"
+- name: section_three_description
+  type: textarea
+  default: Lead a fitness event or accept 1-on-1 training sessions when it works for
+    you. Grow your fitness community with UBQFIT.
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html
+  label: Section Three Description
+  description: With poster image on the right and text content on the left
 pages:
 - index.html
