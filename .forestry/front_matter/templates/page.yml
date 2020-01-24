@@ -45,13 +45,6 @@ fields:
     required: false
   label: Hero Video Button Label
   default: Watch Video
-- name: section_one_image
-  type: file
-  config:
-    maxSize: 250
-  label: Section One Image
-  description: With poster image on the left and text content on the right
-  default: "/assets/images/traniee-2x.png"
 - name: section_one_title
   type: textarea
   default: ''
@@ -62,5 +55,22 @@ fields:
       format: markdown
   label: Section One Title
   description: With poster image on the left and text content on the right
+- name: section_one_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section One Image
+  description: With poster image on the left and text content on the right
+  default: "/assets/images/traniee-2x.png"
+- name: section_one_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  description: With poster image on the left and text content on the right
+  label: Section One Description
 pages:
 - index.html
