@@ -5,13 +5,13 @@ hero_image_title: The Gift That Keeps On Giving
 hero_image_description: Give someone the special gift of a live workout
 gift_one_background_image: "/assets/images/gift3.jpg"
 gift_one_amount: "15"
+gift_one_features: ['1 Virtual Training Session']
 gift_two_background_image: "/assets/images/gift.jpg"
 gift_two_amount: "45"
+gift_two_features: ['3 Virtual Training Sessions']
 gift_three_background_image: "/assets/images/watch-christmas.jpg"
 gift_three_amount: "100"
-gift_one_features: ['one']
-gift_two_features: ['one']
-gift_three_features: ['one', 'two', 'three']
+gift_three_features: ['5 Virtual Training Sessions', '1 UBQFIT Watch']
 ---
 <div class="containers">
   <div class="download-app appinstall-view" id="download-app">
@@ -94,7 +94,9 @@ gift_three_features: ['one', 'two', 'three']
                           style="font-size:1.5rem; z-index:10; position:relative;color:white;margin:0;color:black;z-index:1;">
                           ${{ page.gift_one_amount }}</p>
                         <ul class="list-group ">
-                          <li class="list-group-item tick-price" style="color:black;"> 1 Virtual Training Session</li>
+                          {% for feature in page.gift_one_features %}
+                            <li class="list-group-item tick-price" style="color:black;"> {{ feature }}</li>
+                          {% endfor %}
                         </ul>
                         <div class="paypal-button" id="paypal-button-container-1"
                           style="width:90%;color:white;z-index:1;">
@@ -149,7 +151,9 @@ gift_three_features: ['one', 'two', 'three']
                           style="font-size:1.5rem; z-index:10; position:relative;color:white;margin:0;color:black;z-index:1;">
                           ${{ page.gift_two_amount }}</p>
                         <ul class="list-group ">
-                          <li class="list-group-item tick-price" style="color:black;"> 3 Virtual Training Sessions</li>
+                          {% for feature in page.gift_two_features %}
+                            <li class="list-group-item tick-price" style="color:black;"> {{ feature }}</li>
+                          {% endfor %}
                         </ul>
                         <div class="paypal-button" id="paypal-button-container-2"
                           style="width:90%;color:white;z-index:1;">
@@ -198,8 +202,9 @@ gift_three_features: ['one', 'two', 'three']
                           style="font-size:1.5rem; z-index:10; position:relative;color:white;margin:0;color:black;z-index:1;">
                           ${{ page.gift_three_amount }}</p>
                         <ul class="list-group ">
-                          <li class="list-group-item tick-price" style="color:black;"> 5 Virtual Training Sessions</li>
-                          <li class="list-group-item tick-price" style="color:black;"> 1 UBQFIT Watch</li>
+                          {% for feature in page.gift_three_features %}
+                            <li class="list-group-item tick-price" style="color:black;"> {{ feature }}</li>
+                          {% endfor %}
                         </ul>
                         <div class="paypal-button" id="paypal-button-container-3" style="width:90%;z-index:1;"></div>
                         <script>
