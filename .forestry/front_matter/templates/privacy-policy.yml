@@ -1,0 +1,25 @@
+---
+label: Privacy Policy
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: file
+  name: hero_video_portrait
+  label: hero_video_portrait
+- type: file
+  name: hero_video_landscape
+  label: hero_video_landscape
+- type: text
+  name: hero_video_title
+  label: hero_video_title
+- type: text
+  name: hero_video_description
+  label: hero_video_description
+- type: text
+  name: section_title
+  label: section_title
+- type: text
+  name: section_description
+  label: section_description
