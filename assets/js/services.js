@@ -66,8 +66,28 @@ function findGetParameter(parameterName) {
 
 // To Get the Page Name
 
+// var path = window.location.pathname;
+// var page = path.split("/").pop();
+
+// if (page == 'blog-detail.html') {
+//     var blogId = findGetParameter('blog-id');
+//     getBlogDetail(blogId);
+// } else if (page == 'index.html' || page == '') {
+//     getTrendingSections();
+//     getInstagramSections();
+// } else if (page == 'blog.html') {
+//     getBlogList(1);
+// } else if (page == 'trainer.html' || page == 'trainee.html' || page == 'busy-mommy.html' || page == 'busy-executive.html') {
+//     getInstagramSections();
+// }
+// else if (page == 'pricing.html') {
+//     loadPricing();
+// }
+
+// Reimplemented based on Jekyll
+
 var path = window.location.pathname;
-var page = path.split("/").pop();
+var page = path;
 
 if (page == 'blog-detail.html') {
     var blogId = findGetParameter('blog-id');
@@ -77,13 +97,12 @@ if (page == 'blog-detail.html') {
     getInstagramSections();
 } else if (page == 'blog.html') {
     getBlogList(1);
-} else if (page == 'trainer.html' || page == 'trainee.html' || page == 'busy-mommy.html' || page == 'busy-executive.html') {
+} else if (page == '/trainer/' || page == '/trainee/' || page == '/busy-mommy/' || page == '/busy-executive/') {
     getInstagramSections();
 }
-else if (page == 'pricing.html') {
+else if (page == '/pricing/') {
     loadPricing();
 }
-
 
 // Get Trending Section
 
@@ -770,9 +789,9 @@ function loadPricing() {
             var traineeWatcher = data.content.filter(function(number) {
                 return number.id == 2;
             });
-            console.log(freeWatcher);
-            console.log(memberWatcher);
-            console.log(traineeWatcher);
+            console.log('freeWatcher', freeWatcher);
+            console.log('memberWatcher', memberWatcher);
+            console.log('traineeWatcher', traineeWatcher);
             
             $('#freeWatcherPrice').append("$"+freeWatcher[0].price + " / Month");
             $('#memberWatcherPrice').append("$"+memberWatcher[0].price + " / Month");
