@@ -5,6 +5,7 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: hero_video_portrait
   label: hero_video_portrait
@@ -13,43 +14,58 @@ fields:
   label: hero_video_landscape
 - type: text
   name: hero_video_title
-  label: hero_video_title
+  label: Hero Video Title
+  default: Trainer
 - type: text
   name: hero_video_description
-  label: hero_video_description
+  label: Hero Video Description
+  default: Earn money on your own time.
 - type: file
   name: section_one_image
-  label: section_one_image
+  label: Section One Image
+  default: "/assets/images/tranier-view.png"
 - type: text
   name: section_one_title
-  label: section_one_title
+  label: Section One Title
+  default: Make money. Build your community.
 - type: textarea
   name: section_one_description
-  label: section_one_description
+  label: Section One Description
+  default: Follow and be followed, notify followers when in a live session, contribute
+    to our widely distributed blog and more. Grow your business to another level with
+    UBQFIT tools.
 - type: file
   name: section_two_left_image
-  label: section_two_left_image
+  label: Section Two Left Image
+  default: "/assets/images/tranier-ex.png"
 - type: file
   name: section_two_right_image
-  label: section_two_right_image
+  label: Section Two Right Image
+  default: "/assets/images/chat-group.png"
 - type: file
   name: section_two_bg_image
   label: section_two_bg_image
 - type: text
   name: section_two_title
-  label: section_two_title
+  label: Section Two Title
+  default: Broadcast your own workouts.
 - type: textarea
   name: section_two_description
-  label: section_two_description
+  label: Section Two Description
+  default: Go live while working out, show your watch data on the screen and provide
+    tips and tricks to current or future clients.
 - type: file
   name: section_three_image
   label: section_three_image
 - type: text
   name: section_three_title
-  label: section_three_title
+  label: Section Three Title
+  default: Use real-time fitness data.
 - type: text
   name: section_three_description
-  label: section_three_description
+  label: Section Three Description
+  default: See real-time fitness data from clients and make training sessions powerful
+    and exciting.
 - type: file
   name: section_four_image_one
   label: section_four_image_one
@@ -58,16 +74,22 @@ fields:
   label: section_four_image_two
 - type: text
   name: section_four_title
-  label: section_four_title
+  label: Section Four Title
+  default: Make money on your time.
 - type: text
   name: section_four_description
-  label: section_four_description
+  label: Section Four Description
+  default: Trainees are looking for you. Go live and start making money on your free
+    time.
 - type: file
   name: section_five_image
   label: section_five_image
 - type: text
   name: section_five_title
-  label: section_five_title
+  label: Section Five Title
+  default: Calendared sessions.
 - type: text
   name: section_five_description
-  label: section_five_description
+  label: Section Five Description
+  default: Make your calendar available for clients to book sessions with you 30 days
+    in advance.
