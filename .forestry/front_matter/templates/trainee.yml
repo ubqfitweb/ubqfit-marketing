@@ -30,21 +30,12 @@ fields:
 - type: text
   name: section_one_description
   label: Section One Description
-- type: file
-  name: section_two_image
-  label: section_two_image
 - type: text
   name: section_two_title
   label: Section Two Title
 - type: textarea
   name: section_two_description
   label: Section Two Description
-- type: file
-  name: section_three_image
-  label: section_three_image
-- type: file
-  name: section_three_bg_image
-  label: section_three_bg_image
 - type: text
   name: section_three_title
   label: Section Three Title
@@ -81,3 +72,21 @@ fields:
     maxSize: 250
   label: Section One Image
   default: "/assets/images/trainee-1.png"
+- name: section_two_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section Two Image
+  default: "/assets/images/watch-connect.png"
+- name: section_three_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section Three Image
+  default: "/assets/images/traniee-view.png"
+- name: section_three_bg_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section Three Bg Image
+  default: "/assets/images/bg-blue-img.png"
