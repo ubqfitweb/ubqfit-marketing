@@ -100,7 +100,7 @@ if (page == 'blog-detail.html') {
 } else if (page == '/trainer/' || page == '/trainee/' || page == '/busy-mommy/' || page == '/busy-executive/') {
     getInstagramSections();
 }
-else if (page == '/pricing/') {
+else if (page == '/pricing/' || page == "/ubqfit-marketing/pricing/") {
     loadPricing();
 }
 
