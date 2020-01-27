@@ -104,3 +104,5 @@ fields:
   label: Section Five Description
   default: Make your calendar available for clients to book sessions with you 30 days
     in advance.
+pages:
+- trainer.html
