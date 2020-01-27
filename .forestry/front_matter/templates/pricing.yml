@@ -45,3 +45,5 @@ fields:
     schema:
       format: html-blocks
   label: Section Two Description
+pages:
+- pricing.html
