@@ -6,12 +6,18 @@ fields:
   name: layout
   label: layout
   hidden: true
-- type: text
-  name: hero_video_portrait
-  label: hero_video_portrait
-- type: text
-  name: hero_video_landscape
-  label: hero_video_landscape
+- name: hero_video_portrait
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Portrait
+  default: "/assets/images/hero_vid_portrait.mp4"
+- name: hero_video_landscape
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Landscape
+  default: "/assets/images/hero_vid_landscape.mp4"
 - type: text
   name: hero_video_title
   label: Hero Video Title
@@ -44,7 +50,8 @@ fields:
   default: "/assets/images/chat-group.png"
 - type: file
   name: section_two_bg_image
-  label: section_two_bg_image
+  label: Section Two Bg Image
+  default: "/assets/images/bradcast-bg.png"
 - type: text
   name: section_two_title
   label: Section Two Title
@@ -56,7 +63,8 @@ fields:
     tips and tricks to current or future clients.
 - type: file
   name: section_three_image
-  label: section_three_image
+  label: Section Three Image
+  default: "/assets/images/record-session.png"
 - type: text
   name: section_three_title
   label: Section Three Title
@@ -68,10 +76,12 @@ fields:
     and exciting.
 - type: file
   name: section_four_image_one
-  label: section_four_image_one
+  label: Section Four Image One
+  default: "/assets/images/follower.png"
 - type: file
   name: section_four_image_two
-  label: section_four_image_two
+  label: Section Four Image Two
+  default: "/assets/images/avaliable.png"
 - type: text
   name: section_four_title
   label: Section Four Title
@@ -83,7 +93,8 @@ fields:
     time.
 - type: file
   name: section_five_image
-  label: section_five_image
+  label: Section Five Image
+  default: "/assets/images/trainer-calender-flow.png"
 - type: text
   name: section_five_title
   label: Section Five Title
