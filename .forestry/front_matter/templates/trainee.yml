@@ -5,36 +5,40 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: text
-  name: hero_video_portrait
-  label: hero_video_portrait
-- type: text
-  name: hero_video_landscape
-  label: hero_video_landscape
+  hidden: true
+- name: hero_video_portrait
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Portrait
+  default: "/assets/images/hero_vid_portrait.mp4"
+- name: hero_video_landscape
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Landscape
+  default: "/assets/images/hero_vid_landscape.mp4"
 - type: text
   name: hero_video_title
-  label: hero_video_title
+  label: Hero Video Title
 - type: text
   name: hero_video_description
-  label: hero_video_description
-- type: file
-  name: section_one_image
-  label: section_one_image
+  label: Hero Video Description
 - type: text
   name: section_one_title
-  label: section_one_title
+  label: Section One Title
 - type: text
   name: section_one_description
-  label: section_one_description
+  label: Section One Description
 - type: file
   name: section_two_image
   label: section_two_image
 - type: text
   name: section_two_title
-  label: section_two_title
+  label: Section Two Title
 - type: textarea
   name: section_two_description
-  label: section_two_description
+  label: Section Two Description
 - type: file
   name: section_three_image
   label: section_three_image
@@ -43,10 +47,10 @@ fields:
   label: section_three_bg_image
 - type: text
   name: section_three_title
-  label: section_three_title
+  label: Section Three Title
 - type: text
   name: section_three_description
-  label: section_three_description
+  label: Section Three Description
 - type: file
   name: section_four_left_image
   label: section_four_left_image
@@ -55,19 +59,25 @@ fields:
   label: section_four_right_image
 - type: text
   name: section_four_title
-  label: section_four_title
+  label: Section Four Title
 - type: textarea
   name: section_four_description
-  label: section_four_description
+  label: Section Four Description
 - type: text
   name: section_four_subtitle
-  label: section_four_subtitle
+  label: Section Four Subtitle
 - type: file
   name: section_five_image
-  label: section_five_image
+  label: Section_five _image
 - type: text
   name: section_five_title
-  label: section_five_title
+  label: Section Five_Title
 - type: text
   name: section_five_description
-  label: section_five_description
+  label: Section Five Description
+- name: section_one_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section One Image
+  default: "/assets/images/trainee-1.png"
