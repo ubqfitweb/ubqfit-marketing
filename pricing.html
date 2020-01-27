@@ -46,14 +46,14 @@ section_two_description: "<p>It’s free to watch. No commitments. </p><p>Choose
                     <video class="heroVideo portrait"
                       poster="http://localhost:4000/assets/images/home-banner.png" muted playsinline preload
                       autoplay loop>
-                      <source src="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_portrait.mp4"
+                      <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait }}"
                         type="video/mp4" class="portrait">
                       Your browser does not support the video tag.
                     </video>
                     <video class="heroVideo landscape"
                       poster="http://localhost:4000/assets/images/home-banner.png" muted playsinline preload
                       autoplay loop>
-                      <source src="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_landscape.mp4"
+                      <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape }}"
                         type="video/mp4" class="landscape">
                       Your browser does not support the video tag.
                     </video>
@@ -154,8 +154,8 @@ section_two_description: "<p>It’s free to watch. No commitments. </p><p>Choose
                 </div>
               </section>
               <section class="pattern-bgsection big-text-section text-center">
-                <h2>What are you waiting for?</h2>
-                <h2> It’s free to watch. No commitments.<br> Choose either public or private. </h2>
+                <h2>{{ page.section_two_title }}</h2>
+                <h2> {{ page.section_two_description }} </h2>
               </section>
             </div>
           </div>
