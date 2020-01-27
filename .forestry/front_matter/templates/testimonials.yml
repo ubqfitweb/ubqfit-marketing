@@ -1,0 +1,30 @@
+---
+label: Testimonials
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+- name: hero_video_portrait
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Portrait
+  default: "/assets/images/hero_vid_portrait.mp4"
+- name: hero_video_landscape
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Landscape
+  default: "/assets/images/hero_vid_landscape.mp4"
+- type: text
+  name: hero_video_title
+  label: Hero Video Title
+  default: Testimonials
+- type: text
+  name: hero_video_description
+  label: Hero Video Description
+  default: See what others are saying
+pages:
+- testimonials.html
