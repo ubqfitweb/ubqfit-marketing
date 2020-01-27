@@ -12,17 +12,19 @@ fields:
     maxSize: 250
   label: Hero Video Portrait
   default: "/assets/images/hero_vid_portrait.mp4"
-- type: text
-  name: hero_video_title
-  label: hero_video_title
-- type: text
-  name: hero_video_description
-  label: hero_video_description
 - name: hero_video_landscape
   type: file
   config:
     maxSize: 250
   label: Hero Video Landscape
   default: "/assets/images/hero_vid_landscape.mp4"
+- type: text
+  name: hero_video_title
+  label: Hero Video Title
+  default: Testimonials
+- type: text
+  name: hero_video_description
+  label: Hero Video Description
+  default: See what others are saying
 pages:
 - testimonials.html
