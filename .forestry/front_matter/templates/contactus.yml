@@ -26,3 +26,5 @@ fields:
   name: submit_button_text
   label: Submit Button Text
   default: Send
+pages:
+- contactus.html
