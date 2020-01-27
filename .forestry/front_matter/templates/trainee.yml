@@ -24,30 +24,60 @@ fields:
 - type: text
   name: hero_video_description
   label: Hero Video Description
+- name: section_one_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section One Image
+  default: "/assets/images/trainee-1.png"
 - type: text
   name: section_one_title
   label: Section One Title
 - type: text
   name: section_one_description
   label: Section One Description
+- name: section_two_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section Two Image
+  default: "/assets/images/watch-connect.png"
 - type: text
   name: section_two_title
   label: Section Two Title
 - type: textarea
   name: section_two_description
   label: Section Two Description
+- name: section_three_bg_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section Three Bg Image
+  default: "/assets/images/bg-blue-img.png"
+- name: section_three_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section Three Image
+  default: "/assets/images/traniee-view.png"
 - type: text
   name: section_three_title
   label: Section Three Title
 - type: text
   name: section_three_description
   label: Section Three Description
-- type: file
-  name: section_four_left_image
-  label: section_four_left_image
-- type: file
-  name: section_four_right_image
-  label: section_four_right_image
+- name: section_four_left_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section Four Left Image
+  default: "/assets/images/fit.png"
+- name: section_four_right_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section Four Right Image
+  default: "/assets/images/chat-group-2.png"
 - type: text
   name: section_four_title
   label: Section Four Title
@@ -57,36 +87,15 @@ fields:
 - type: text
   name: section_four_subtitle
   label: Section Four Subtitle
-- type: file
-  name: section_five_image
-  label: Section_five _image
+- name: section_five_image
+  type: file
+  config:
+    maxSize: 250
+  label: Section Five Image
+  default: "/assets/images/trainee-calender-flow.png"
 - type: text
   name: section_five_title
-  label: Section Five_Title
+  label: Section Five Title
 - type: text
   name: section_five_description
   label: Section Five Description
-- name: section_one_image
-  type: file
-  config:
-    maxSize: 250
-  label: Section One Image
-  default: "/assets/images/trainee-1.png"
-- name: section_two_image
-  type: file
-  config:
-    maxSize: 250
-  label: Section Two Image
-  default: "/assets/images/watch-connect.png"
-- name: section_three_image
-  type: file
-  config:
-    maxSize: 250
-  label: Section Three Image
-  default: "/assets/images/traniee-view.png"
-- name: section_three_bg_image
-  type: file
-  config:
-    maxSize: 250
-  label: Section Three Bg Image
-  default: "/assets/images/bg-blue-img.png"
