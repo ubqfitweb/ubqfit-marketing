@@ -5,3 +5,43 @@ fields:
 - type: text
   name: layout
   label: layout
+- name: hero_video_portrait
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Portrait
+  default: "/assets/images/hero_vid_portrait.mp4"
+- name: hero_video_landscape
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Landscape
+  default: "/assets/images/hero_vid_landscape.mp4"
+- name: hero_video_title
+  type: text
+  config:
+    required: false
+  label: Hero Video Title
+  default: Pricing
+- name: hero_video_description
+  type: text
+  config:
+    required: false
+  label: Hero Video Description
+  default: Find the right plan for you.
+- name: section_two_title
+  type: text
+  config:
+    required: false
+  label: Section Two Title
+  default: What are you waiting for?
+- name: section_two_description
+  type: textarea
+  default: "<p>It’s free to watch. No commitments. </p><p>Choose either public or
+    private.</p>"
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Section Two Description
