@@ -5,18 +5,24 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: file
   name: hero_video_portrait
-  label: hero_video_portrait
+  label: Hero Video Portrait
+  default: "/assets/images/hero_vid_portrait.mp4"
 - type: file
   name: hero_video_landscape
-  label: hero_video_landscape
+  label: Hero Video Landscape
+  default: "/assets/images/hero_vid_landscape.mp4"
 - type: text
   name: hero_video_title
-  label: hero_video_title
+  label: Hero Video Title
+  default: Contact Us
 - type: text
   name: hero_video_description
-  label: hero_video_description
+  label: Hero Video Description
+  default: We would love to hear your questions/comments.
 - type: text
   name: submit_button_text
-  label: submit_button_text
+  label: Submit Button Text
+  default: Send
