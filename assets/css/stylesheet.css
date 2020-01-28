@@ -3204,4 +3204,8 @@ login .font-bold {
     overflow: hidden;
 }
 
+strong em {
+    color: #e10600;
+}
+
 /* ! App view based on mobile or web */
