@@ -381,7 +381,7 @@ function loadBlog(blog, page) {
         html += '<div class="blog-view">' +
             '<div class="blog-top">' +
             '<div class="float-left margin-right-15">' +
-            '<img src="images/profile-img.png">' +
+            '<img src=' + baseUrl + '"assets/images/profile-img.png">' +
             '</div>' +
             '<h1> UBQFIT </h1>' +
             '<span>' + blogDate + '</span>' +
