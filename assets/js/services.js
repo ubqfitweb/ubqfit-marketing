@@ -95,7 +95,7 @@ if (page == 'blog-detail.html') {
 } else if (page == 'index.html' || page == '') {
     getTrendingSections();
     getInstagramSections();
-} else if (page == '/blog/') {
+} else if (page == '/blog/' || page == '/ubqfit-marketing/blog/') {
     getBlogList(1);
 } else if (page == '/trainer/' || page == '/trainee/' || page == '/busy-mommy/' || page == '/busy-executive/') {
     getInstagramSections();
