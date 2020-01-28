@@ -247,7 +247,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: html
+      format: html-blocks
   label: Section Description
 pages:
 - privacy-policy.html
