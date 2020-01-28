@@ -5,24 +5,511 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: text
-  name: hero_video_portrait
-  label: hero_video_portrait
-- type: text
-  name: hero_video_landscape
-  label: hero_video_landscape
+  hidden: true
+- name: hero_video_portrait
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Portrait
+  default: "/assets/images/hero_vid_portrait.mp4"
+- name: hero_video_landscape
+  type: file
+  config:
+    maxSize: 250
+  label: Hero Video Landscape
+  default: "/assets/images/hero_vid_landscape.mp4"
 - type: text
   name: hero_video_title
-  label: hero_video_title
+  label: Hero Video Title
+  default: Terms & Conditions
 - type: text
   name: hero_video_description
-  label: hero_video_description
+  label: Hero Video Description
 - type: text
   name: section_title
-  label: section_title
+  label: Section Title
+  default: Terms & Conditions
 - type: textarea
   name: section_description
-  label: section_description
+  label: Section Description
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  default: '<p><strong>Overview</strong></p><p>Welcome to <strong>UB<em>Q</em>FIT</strong>,
+    brought to you by <strong>UB<em>Q</em>FIT</strong> Inc. UBQFIT is an online fitness
+    community where fitness Trainers can connect with Trainees, including providing
+    live interactive lessons for Trainees using web cams over the internet, and Trainees
+    can search and identify teachers who provide lessons in numerous fitness disciplines.
+    Before using this service, please read our terms and conditions, as they govern
+    your use of our service.</p><p>These Terms of Use, our Privacy Policy and our
+    Frequently Asked Questions (FAQ) section are resources for you to get a better
+    understanding of how our platform works; including the kinds of data we collect,
+    the way we bill, how we interact with you, how you can interact with your Trainees
+    or Trainers as well as the larger fitness instruction community and other useful
+    information about our service. We encourage you to revisit these Terms of Use
+    when you have a question about the service or want to know how something works.
+    We may also modify these Terms of Use from time to time as we deem appropriate,
+    so you should check back in frequently to confirm the terms upon which you may
+    use our service.</p><p>The terms "<strong> UB<em>Q</em>FIT</strong>", "<strong>we</strong>",
+    " <strong>us</strong>" "<strong>our</strong>" and similar terms refer to <strong>UB<em>Q</em>FIT</strong>
+    Inc. The terms "<strong>you</strong>," " <strong>your</strong>," " <strong>user</strong>"
+    and similar terms refer to you as a user and/or member of UBQFIT. Our users generally
+    fall into two groups:</p><p>"<strong>Trainers</strong>" who are users of <strong>UB<em>Q</em>FIT</strong>
+    that register with us and provide adequate information, credentials and other
+    information as requested by and reasonably satisfactory to by us.</p><p>"<strong>Students</strong>"
+    including the parents of minors, who are users of UBQFIT , register as Trainees
+    and who can find Trainers, and/or attend lessons through UBQFIT.</p><p>Unless
+    otherwise specified, the Terms apply to all users of UBQFIT , whether browsing
+    UBQFIT website or acting as a Trainer or Student.</p><p><strong>Acceptance of
+    Terms of Use</strong></p><p>These Terms of Use (or "<strong>Terms</strong>"),
+    which include our Privacy Policy, are a binding legal agreement and govern your
+    use of <strong>UB<em>Q</em>FIT</strong> platform and service, including all features
+    and functionalities, applications, updates, notifications, premium services, platform
+    and our user interfaces, and all content and software associated therewith ("
+    <strong>Service</strong>"). By clicking on the "<strong>Accept</strong>" button
+    during the registration or by<em> </em>downloading, using, visiting, or browsing
+    <strong>UB<em>Q</em>FIT</strong> , you accept and agree to be bound by these Terms
+    as may be amended from time to time. If you do not agree to these Terms, you are
+    not authorized to download or use, and you should not use, the Service</p><p>We
+    reserve the right to change these Terms, including the Privacy Policy, in our
+    sole and absolute discretion. The most current version of these Terms can be reviewed
+    by visiting our website and clicking on " <strong>Terms of Use</strong>" located
+    at the bottom of each page of <strong>UB<em>Q</em>FIT</strong> website. The most
+    current version of the Terms of Use will supersede all previous versions. Use
+    of the Service after we have posted any revision of the Terms will be considered
+    your acceptance of the new Terms. If you do not agree to the changes in the Terms,
+    you may terminate your use of the Service and this agreement as set forth below.</p><p>By
+    registering for or using the Service, you warrant that you are of legal age and
+    competent to enter into a binding contract. Please note that Students must be
+    at least 18 years of age. In order to keep minors from using the Service and registering
+    for Lessons, we require accurate credit card information and payment.</p><p>Trainers
+    must be at least 18 years of age.</p><p><strong>Copyright Policy</strong></p><p><strong>UB<em>Q</em>FIT</strong>
+    respects the intellectual property of others and asks that users of Service do
+    the same. In connection with our Service, we have adopted and implemented a policy
+    respecting copyright law that provides for the removal of any infringing materials
+    and for the termination, in appropriate circumstances, of users of our Service
+    who are repeat infringers of intellectual property rights, including copyrights.
+    If you believe that one of our users is, through the use of our Service, unlawfully
+    infringing the copyright(s) in a work, and wish to have the allegedly infringing
+    material removed, the following information in the form of a written notification
+    (pursuant to 17 U.S.C. § 512(c)) must be provided to our designated Copyright
+    Agent</p><ol><li><p>your physical or electronic signature;</p></li><li><p>identification
+    of the copyrighted work(s) that you claim to have been infringed;</p></li><li><p>dentification
+    of the material on our services that you claim is infringing and that you request
+    us to remove;</p></li><li><p>sufficient information to permit us to locate such
+    material;</p></li><li><p>your address, telephone number, and e-mail address;</p></li><li><p>a
+    statement that you have a good faith belief that use of the objectionable material
+    is not authorized by the copyright owner, its agent, or under the law; and</p></li><li><p>statement
+    that the information in the notification is accurate, and under penalty of perjury,
+    that you are either the owner of the copyright that has allegedly been infringed
+    or that you are authorized to act on behalf of the copyright owner.</p></li></ol><p>Please
+    note that, pursuant to 17 U.S.C. § 512(f), any misrepresentation of material fact
+    (falsities) in a written notification automatically subjects the complaining party
+    to liability for any damages, costs and attorney’s fees incurred by us in connection
+    with the written notification and allegation of copyright</p><p>The designated
+    Copyright Agent for the Company is:</p><p>Rick Chapo, <a href="http://dmcaagentservice.com/">DMCAAgentService.com</a><br>P.O.
+    Box 373<br>Pine Valley, California 91962<br>Phone: <a href="tell:8008047260">(800)
+    804-7260</a><br>Email: <a href="mailto:complaint@dmcaagentservice.com">complaint@dmcaagentservice.com</a></p><p><strong>Our
+    Business Address:</strong><br><strong>UB<em>Q</em>FIT</strong> Inc<br>980 North
+    Federal Highway<br>Boca Raton, FL 33432<br><a href="https://ubqfit.com/">UBQFIT.com</a>
+    &amp; <strong>UB<em>Q</em>FIT</strong> Apps<br></p><p><strong>Use and Responsibilities
+    of the Service</strong></p><p></p><p><em>Registration.</em> You do not need to
+    register as a member to browse the public portions of <strong>UB<em>Q</em>FIT</strong>
+    website. However, visitors will have only limited access to the Service, visitors
+    can view the public pages of Trainers, but cannot purchase, conduct or attend
+    lessons through the Service.</p><p>In order to use the Service as a Trainer or
+    Student, you must register as a member and provide to us certain basic information
+    such as your legal name, address, instrument, and similar personal information.
+    We respect and value your privacy; your information is secured and will never
+    be sold, shared or rented to other companies or used by us, except as set forth
+    in our Privacy Policy. If you are a Trainer, you will be required to provide additional
+    information as specified in the Trainer Services section below. You agree that
+    all information you provide to us will be complete, true and correct and that
+    you will keep it up-to-date.</p><p>During the registration process, you will be
+    required to choose a password. You will be responsible for securing your password
+    and for all use of the Service using your password. You agree that you will not
+    disclose, trade or transfer, with or without payment, your password. You will
+    be solely liable for any use of the Service under your account and password. You
+    agree to notify us promptly of any unauthorized use or disclosure of your password.</p><p>You
+    agree that we will have the right, but not obligation, to verify your identity
+    and any information you submit on the Service during the registration process
+    or at any time as long as you use the service. We reserve the right to suspend
+    or terminate your account and use of the Service if we believe any information
+    is inaccurate or incorrect, or if you fail to adhere to the terms of the Service.</p><p>If
+    you are registering as a Student, you understand and agree that while we make
+    reasonable efforts to perform a verification and background check of the Trainers
+    through a third party service provider, we do not control and are not responsible
+    for the accuracy, completeness, timeliness or correctness of any information provided
+    by such service provider.</p><p><em>Purchase of online interactive Lessons</em>
+    . On UBQFIT Trainers may offer and Students may take online lessons over live
+    video ("<strong>Lessons</strong>"). After a Student has identified a Trainer,
+    the applicable Trainer rates and schedules will be agreed upon between the Trainer
+    and Student. A Student, or their parent or guardian, will purchase one or more
+    Lessons prior to instruction through the Service. See Pricing and the website
+    for more information on payment.</p><p><em>Assessments.</em> UBQFIT platform includes
+    functionality to assess a Student’s performance during a Lesson. You agree that
+    such assessments and reports shall be used solely in connection with Lessons and
+    assessment and improvement of the Student or Trainer performance and shall not
+    be distributed, posted, copied or transmitted other than through and in connection
+    with the Service.</p><p>We may offer Students the opportunity to rate Trainers
+    and these ratings will be posted on the Trainer’s public profile. We may also
+    from time to time request that Students evaluate and assess Trainers. The results
+    of any such evaluations may be shared with the Trainer, but we will not disclose
+    the identity of the Student(s) making or participating in the evaluation. As a
+    Trainer, you agree that we may post such ratings on your profile, even if negative,
+    and that we may conduct such evaluations in our discretion.</p><p><em>User Obligations</em>
+    . Other than with respect to the provision or promotion of Lessons by a Trainer,
+    your use of the Service shall be solely for your own personal, noncommercial and
+    entertainment use. You must comply with all applicable laws in connection with
+    your use of the Service. You will not attempt to get around or violate any security
+    feature of the Service, including accessing any Student information or profiles
+    for which you do not have permission, other content or information not intended
+    for you, or to contact any Student without prior permission.</p><p>You agree that
+    you will not:</p><p>(i) use the Service in any manner to interfere with or attempt
+    to interfere with the normal operations of the Service or any user’s use of the
+    Service, including by overloading, flooding, spamming or crashing the Service
+    or its underlying systems;</p><p>(ii) post, distribute or use any content including
+    Trainer Content, or engage in any speech or activity that is libelous, defamatory,
+    invasive or privacy or publicity rights, vulgar, obscene, sexually explicit or
+    exploitative, harassing, bullying, threatening, stalking, profane, indecent of
+    otherwise objectionable;</p><p>(iii) use the Service in any manner that may give
+    rise to any civil liability of UBQFIT;</p><p>(iv) use the Service to advertise
+    or solicit funds for goods or services (other than Trainer Lessons offered through
+    the Service;</p><p>(v) violate any applicable law or encourage conduct that would
+    constitute a criminal offense;</p><p>(vi) mpersonate or falsely suggest or claim
+    an affiliation with any other person or entity; or</p><p>(vii) provide any information
+    that would help others abuse the site.</p><p><em>Software/Equipment Requirements</em>
+    TTo use the Service you will need certain basic equipment and a broadband internet
+    connection. The minimum requirements for use of the Service for Lessons may be
+    found on the " <a href="https://ubqfit.com/how-it-works.html">How It Works</a>"
+    page on our site at <a href="https://ubqfit.com/">UBQFIT.com.</a> You are solely
+    responsible for obtaining and maintaining the tools, equipment and internet service
+    for use of the Service at your sole expense.</p><p><em>Students:</em></p><p>You
+    agree that you will use all Trainer Content only for your personal instruction
+    and will not reproduce, distribute, modify, republish (such as on YouTube or other
+    video-sharing site), resell or transmit any Trainer Content.</p><p>You agree to
+    treat Trainers respectfully. There will be no profanity, offensive language or
+    rude behavior on UBQFIT or during any Lesson. You will follow the Trainer’s guidelines
+    and be on time for Lessons. You should not disclose personal information other
+    than as relevant to receiving Lessons. If any Trainer requests irrelevant personal
+    information or suggests a meeting or conversation that is not on UBQFIT’s service,
+    immediately report the request to us at report.</p><p>There is a chance that a
+    Trainer will not act appropriately and a Student could be exposed to content,
+    Lessons or behavior during any Lesson that is objectionable or offensive. If you
+    encounter objectionable or offensive language or behavior, notify us immediately
+    by sending an email to report – using the report abuse link at the bottom of every
+    interactive page. You agree that under no circumstance will UBQFIT or any of its
+    employees be liable for damages. Instead, you are free to seek damages directly
+    from the Trainer.</p><p><strong>Pricing</strong></p><p>There is no fee for registration
+    on UBQFIT Service. However, we reserve the right to establish such fees at any
+    time. In the event that we establish membership fees, you may be required to pay
+    such fees in order to purchase or conduct future Lessons or otherwise use the
+    Service.</p><p>We utilize Stripe as our payment processor (the “<strong>Payment
+    Processor”</strong>) to process payments, and we are not liable in any manner
+    for the performance of the Payment Processor in providing such payment processing
+    service. By using the UBQFIT and/or by making use of some or all of these payment
+    processing services, you agree to be bound by the Payment Processor’s terms and
+    conditions (which can be found at <a href="https://stripe.com/legal" title="https://stripe.com/legal">https://stripe.com/legal</a>)
+    and hereby consent and authorize us to delegate the authorizations and collect,
+    analyze, and share the information you provide to us with the Payment Processor
+    to the extent required to provide our services to you. We reserve the right to
+    deny access to the Site or our services and/or terminate a user’s account for
+    failure to pay fees when due.</p><p>If you purchase Lessons through the Service,
+    you hereby authorize us to debit your account or charge your credit card for all
+    charges. You agree that all information you provide with respect to payment will
+    be accurate and complete and that you will keep all such information current.</p><p>We
+    reserve the right to modify, terminate or otherwise amend our accepted payment
+    methods. You remain responsible for any uncollected amounts. In the event that
+    any amounts are unpaid by you, including as a result of rejection of payment by
+    Stripe or your credit card, we reserve the right to cancel or suspend your Lessons
+    and further use of the Service by you. You agree to be responsible for and reimburse
+    us for any legal or other fees we may incur in collecting overdue amounts from
+    you.</p><p><strong>Cancelation Policy and Fees</strong></p><p>(i) UBQFIT does
+    not offer any cash refunds in any circumstance. UBQFIT will only offer credit
+    that may be used in the future toward other services purchased on the platform.</p><p>(ii)
+    Paid Events. No cancelation option is offered for paid events. Trainee will forego
+    all micro funds paid for such paid event if Trainee is unable to attend such paid
+    event.</p><p>(iii) Calendar Session Cancelation 24 Hours prior to start time.
+    Trainee will be charged a $5.00 fee. If Trainer cancels in this case, Trainee
+    will receive full credit for the session.</p><p>(iv) Calendar Session Cancelation
+    within 24 Hours of start time or no show for the Lesson. Trainee will forego the
+    funds paid for the Lesson.</p><p><strong>Privacy</strong></p><p>Your privacy is
+    very important to us. Any personally identifying information submitted through
+    the Service is subject to our Privacy Policy, the terms of which are incorporated
+    herein. Please review our Privacy Policy to understand our practices. The date
+    of any changes to our Privacy Policy will be noted at the bottom of the policy.
+    We may use your personal information as described in the Privacy Policy. Additionally,
+    we may send you notifications about new Service features, special offers, promotional
+    announcements and customer surveys via email, notifications within the Service,
+    text message or other methods. By using the Service, you consent to receiving
+    electronic communications from us regarding the Service. These communications
+    may include notices about your account (e.g., change in password or activity),
+    confirmation e-mails and other transactional information), introductions or confirmations
+    of introduction and information concerning or related to our Service. You acknowledge
+    these communications are a necessary part of the Service and you agree to receive
+    them as part of UBQFIT Service.</p><p><strong>Monitoring of Content, Reports of
+    Abuse </strong>We reserve the right, but shall be in no obligation, to monitor
+    any Trainer Content, Lessons, chat, email and other information and communications
+    posted through or on the Service. We reserve the right to remove, suspend or limit
+    access to any content that we believe does not meet these Terms or which we otherwise
+    determine is harmful, objectionable, illegal, offensive or violates our rights
+    or the rights of any person or which may threaten the safety or property of our
+    service or others. We shall not have any liability for any loss or damage resulting
+    from any reviews, comments or evaluations provided by any user of the Service
+    or on the Site.</p><p>The Service includes functions whereby a Student, Trainer
+    or other third party may report abuse or objectionable behavior, including during
+    a Lesson. We will report any abuse or sexually explicit or exploitative conduct
+    or other criminal offenses to the appropriate law enforcement, social services
+    or other government or local agencies as required by applicable law or as we otherwise
+    deem appropriate.</p><p><strong>Intellectual Property</strong></p><p><em>Ownership.</em>The
+    Service, including all content, graphics, audio, video, pictures, trademarks,
+    service marks, logos and other material on the Service, and its underlying software
+    (the “<strong>Software</strong>”), algorithms, databases, look and feel and arrangement,
+    are the intellectual property of UBQFIT , subject to copyright and other intellectual
+    property protections. UBQFIT mark and logo are the trademarks of UBQFIT . All
+    rights in and to our website, the Service and the Software not expressly granted
+    herein are reserved by us. We grant you and you accept a non-exclusive, non-transferable,
+    revocable license to use the Software solely for your personal use of the Service
+    and in accordance with these Terms of Use.</p><p><em>Restrictions.</em>Other than
+    the provision of Lessons by Trainers, you may not use any information provided
+    on or through the Service for any commercial purpose including by selling, buying,
+    distributing, reposting or licensing any information or contacts you may obtain
+    through use of the Service. You may not use any page-scraper, spider, robot or
+    other automatic device or methodology to access, acquire, copy or monitor any
+    contacts or content provided on or through the Service. You may not copy, republish,
+    mirror, transmit, perform, sell or distribute any part of the Service for any
+    commercial or other purpose or other than as expressly permitted herein. You may
+    not alter, modify or create derivative works of the Software or Service and shall
+    not access or attempt to access, reverse engineer, decompile or otherwise discover
+    the source code of the Software.</p><p><em>User Content.</em>ou may provide certain
+    personal information, including personal images, and other material or content
+    to UBQFIT through and for use on the Service (“User Content”) and create your
+    own profile page. You may not post, transmit, upload or publish any User Content
+    that you did not create or have permission to post. You also consent to the use
+    of your image(s) if included in the User Content and represent that you have obtained
+    the consent of every individual who may appear in your User Content. Please note
+    that even if you restrict access to your profile page or make your profile page
+    a private page, your name will appear as a user of UBQFIT .</p><p><em>Trainer
+    Content, Recordings. </em>Unless otherwise provided herein or in the Additional
+    Terms for Trainers (the “Trainer Terms”) UBQFIT retains ownership of all content
+    created by the Trainer and you that is embodied in our records of the Lesson.
+    All users understand and agree that we will record and may monitor any Lessons
+    conducted through the Service (including chat and video streaming) (i) for other
+    users to access via the Service or (ii) for quality control, safety and other
+    purposes. We own all rights in and to such recordings; provided, however that
+    we reserve the right to retain and store copies of all such recordings indefinitely
+    and to review such recordings for any purpose. If required or deemed appropriate,
+    we may provide access to or copies of such recordings to law enforcement, social
+    services or other government agencies. Users may not copy, republish (including
+    on YouTube or other video-sharing sites), repost, distribute, sell, license or
+    perform any recordings without our permission.</p><p><strong>Maintenance of the
+    Service</strong></p><p>We reserve the right to issue corrections or modifications
+    or upgraded versions of the Service and Software at any time in our discretion.
+    From time to time and with or without notice, the Service may be unavailable so
+    that we may perform ongoing, scheduled or emergency corrections or upgrades; provided,
+    that if practicable, we will use good faith efforts to notify you in advance and
+    to schedule upgrades or downtime when Lessons are not scheduled.</p><p><strong>Termination</strong></p><p>We
+    may at any time cease to continue operating part or all or selectively disable
+    certain aspects of the Service. In the event that we disable or cease providing
+    the Service, other than due to a breach by you of these Terms, our sole obligation
+    to you shall be to (i) if you are a Student, refund to you any amounts paid for
+    future Lessons or (ii) if you are a Trainer, pay you for all Lessons conducted
+    through the Service prior to such termination. We have no obligation to provide
+    upgrades, updates, support or maintenance for the Service; provided, however,
+    that we reserve the right to make such upgrades and the Service may be unavailable
+    from time to time for support and maintenance purposes. We may also establish
+    additional rules, limits or policies regarding the Service and you agree that
+    your compliance with such rules, limits or policies shall be a condition of your
+    continued use of the service. For example, we may establish limits on the number
+    of Lessons that you may conduct through the Service or the number of aggregate
+    Lessons by Trainers that can be scheduled on the Service at a specific time. We
+    may terminate your use of the Service for any reason at our sole discretion and
+    with or without prior notice to you.</p><p><strong>Health and Exercise Disclaimers</strong></p><p>We
+    urge you to consult your physician or other health care professional before starting
+    any exercise or fitness program to determine if it is right for your needs. This
+    is particularly true if you (or your family) have a history of high blood pressure
+    or heart disease, or if you have ever experienced chest pain when exercising or
+    have experienced chest pain in the past month when not engaged in physical activity,
+    smoke, have high cholesterol, are obese, or have a bone or joint problem that
+    could be made worse by a change in physical activity. Do not start this or any
+    other fitness program if your physician or health care provider advises against
+    it.</p><p>Please note that we do not review, qualify or warrant any workout program
+    or materials provided on the Service, whether from Trainer or other user. You
+    are solely responsible for your use of any such program or materials. Regardless
+    of the workout program, you should warm up for a few minutes prior to starting
+    any exercise. Always exercise at a level at which you feel comfortable. If you
+    experience discomfort, faintness, dizziness, pain or shortness of breath at any
+    time while exercising you should stop immediately.</p><p>The recommendations,
+    instructions and advice contained on the Site or through the Service are in no
+    way intended to replace or to be construed as medical advice, diagnosis or treatment,
+    and are offered for informational and entertainment purposes only. If you have
+    any concerns or questions about your health, you should always consult with a
+    physician or other health care professional. Do not disregard, avoid or delay
+    obtaining medical or health related advice from your health care professional
+    because of any content you may obtain through the Site or Service. The use of
+    any information provided on the Site or through the Service is solely at your
+    own risk.</p><p>You acknowledge that there is a risk of injury associated with
+    any exercise activity. Always use safe techniques and protective equipment when
+    engaging in exercise. If you are unfamiliar with or do not understand the proper
+    techniques and/or use of equipment for the exercises you intend to perform, please
+    seek advice and assistance before performing them. UBQFIT is not responsible or
+    liable for any injury that may result from improper use of any workout programs
+    provided on the Service or any exercise program or activity in which you participate
+    arising from use of the App, the Site or Service. By using the Service, you agree
+    to accept all risks associated with any workout programs or materials you obtain
+    or participate in and that you will not hold UBQFIT liable for any injury or illness
+    that may occur.</p><p>If you are in the United States and think you are having
+    a medical or health emergency, call your health care professional, or 911, immediately.</p><p></p><p><strong>Trainers;
+    Third Party Services and Websites</strong></p><p>UBQFIT does not qualify, endorse,
+    investigate or approve any Trainers listed on the Service. You are solely responsible
+    for ensuring that any such Trainers from whom you purchase materials, such as
+    workout materials, or services are qualified or meet your needs. In no event will
+    UBQFIT be responsible or liable for any materials or services provided by such
+    Trainers or for their failure to provide any such materials or services. The Service
+    may contain links to third party websites that are not owned or controlled by
+    UBQFIT . UBQFIT has no control over, and assumes no responsibility for, the content,
+    privacy policies, products, services or practices of any third party websites.
+    In addition, UBQFIT will not and cannot censor or edit the content of any third-party
+    site. By using the Service, you expressly relieve UBQFIT from any and all liability
+    arising from or in connection with your use of any Trainer or third-party website.</p><p><strong>WARRANTY
+    DISCLAIMER; RELEASE</strong></p><p>THE SERVICE AND SOFTWARE IS PROVIDED ON AN
+    “AS IS” BASIS. WE HEREBY DISCLAIM ANY AND ALL REPRESENTATIONS AND WARRANTIES,
+    WHETHER EXPRESSED OR IMPLIED, WITH RESPECT TO THE SERVICE, SOFTWARE, ITS CONTENT
+    OR ANY LESSONS OFFFERED OR CONDUCTED THROUGH THE SERVICE, INCLUDING, BUT NOT LIMITED
+    TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR ANY PARTICULAR PURPOSES,
+    AND NON-INFRINGEMENT OF ANY THIRD PARTIES'' INTELLECTUAL PROPERTY RIGHTS. UBQFIT
+    MAKES NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY, ROBUSTNESS, SECURITY
+    OR COMPLETENESS OF THE SERVICE, THE SOFTWARE OR ITS CONTENT, OR OTHERWISE. WE
+    MAKE NO WARRANTIES OR GUARANTEES REGARDING THE AVAILABILITY OR RELIABILITY OF
+    THE SERVICE OR THAT THE SERVICE WILL BE ACCESSIBLE AT ANY SPECIFIC TIME. YOU AGREE
+    THAT YOU ARE NOT RELYING ON, NOR HAVE WE MADE, ANY ORAL REPRESENTATIONS OR WARRANTIES
+    REGARDING THE SERVICE, THE TRAINERS, LESSONS OR ANY CONTENT ACCESSED OR PROVIDED
+    THROUGH THE SERVICE. WE MAKE NO REPRESENTATIONS THAT ANY TRAINER WILL ACQUIRE
+    ANY STUDENTS THROUGH THE SERVICE. ALL USE OF THE SERVICE IS AT YOUR OWN RISK.
+    IF YOU ARE DISSATISFIED WITH YOUR LESSONS OR THE SERVICE, YOU SOLE REMEDY IS TO
+    DISCONTINUE USE AND OBTAIN A REFUND FOR ADVANCE PAYMENTS, IF AVAILABLE, AS SET
+    FORTH IN THESE TERMS.</p><p>You expressly acknowledge and agree that UBQFIT is
+    providing only a service to assist you in identifying Trainees or Trainers and
+    a platform through which lessons may be conducted. We do not qualify or assess
+    the skills or competencies of any Trainers, and Students are solely responsible
+    for determining whether a Trainer meets their own needs. We have no obligation
+    to monitor use of the Service by any user. The presence on the Service of, or
+    use of the Service by, any person or entity does not, and shall not be deemed
+    to, constitute a sponsorship, endorsement or guarantee of such person or entity.
+    You are solely responsible for your use of the Service.</p><p>We expressly disclaim,
+    and you accept such disclaimer, any liability for any loss or damage to you or
+    any user arising from any communications, introductions, classes, business relationship
+    or transactions between you or any user. In the event you have a dispute with
+    a user regarding any introductions, communications, lesson, relationship or transaction,
+    including any services provided by a Trainer or failure of any Student to participate
+    in any lessons or any assessment, negative feedback or comments made by any Student
+    about a Trainer or any Trainer about any Student, you hereby release UBQFIT from
+    any and all liability, claims, demand and damages associated with such user or
+    such transaction.</p><p></p><p><strong>LIMITATION ON LIABILITY</strong></p><p>IN
+    NO EVENT SHALL OUR AGGREGATE LIABILITY TO YOU IN CONNECTION WITH YOUR MEMBERSHIP
+    IN AND/OR USE OF UBQFIT SERVICE, INCLUDING ANY LESSONS OR FAILURE OF ANY LESSONS
+    TO BE CONDUCTED, EXCEED THE LESSER OF (I) $100 AND (II) THE TOTAL AMOUNT THAT
+    YOU PAID TO US FOR THE APPLICABLE LESSON OR SERVICE, WHETHER SUCH LIABILITY IS
+    BASED IN CONTRACT, TORT OR OTHERWISE. IN NO EVENT SHALL WE BE LIABLE TO YOU FOR
+    ANY PUNITIVE, CONSEQUENTIAL, SPECIAL, AND/OR INDIRECT DAMAGES, INCLUDING, BUT
+    NOT LIMITED TO, LOSS OF GOOD WILL, PROFITS OR BUSINESS. TO THE MAXIMUM EXTENT
+    PERMITTED BY LAW, IN NO EVENT WILL UBQFIT BE LIABLE FOR ANY DAMAGES, WHETHER DIRECT,
+    INDIRECT, SPECIAL, CONSEQUENTIAL OR OTHERWISE, ARISING OUT OF THE CONDUCT OF ANY
+    TRAINER OR STUDENT, INCLUDING WITHOUS LIMTATION, CLAIMS OF BODILY INJURY, EMOTIONAL
+    DISTRESS OR OTHER DAMAGES RESULTING FROM INTERACTION WITH USERS OF THE SERVICE,
+    WHETHER ONLINE OR OFFLINE, INCLUDING FRAUD. Any claim or cause of action by you
+    must be brought within one (1) year following the occurrence of the event resulting
+    in such claim or action. These limitations shall apply regardless of whether we
+    knew, should have known or were forewarned of the possibility of such damages,
+    but will not apply to any intentional damage or damage caused by our knowing violation
+    of applicable law.</p><p>Some jurisdictions do not allow for limitations of liability
+    or warranty so these may not apply to you.</p><p></p><p><strong>Indemnification</strong></p><p>You
+    hereby agree to indemnify, defend and hold UBQFIT and its affiliates and each
+    of their owners, directors, officers, employees, independent contractors, subcontractors,
+    agents and representative (“ <strong>Indemnified Parties</strong> ”) harmless
+    from any claim, cause of action, proceeding, liability, taxes, damages, loss,
+    attorney fees, cost and expenses arising from or related to (i) your breach of
+    these Terms of Use and/or (ii) your use of the Service, including any Lessons
+    which you may conduct or attend.</p><p><strong>Third Party Websites</strong></p><p>From
+    time to time, we may provide information regarding or links to other websites,
+    resources or products (“ <strong>Third Party Sites and Products </strong>”). Such
+    information or link is provided only for your convenience. UBQFIT does not qualify,
+    endorse, investigate or approve any Third Party Sites and Products and is not
+    responsible for the availability, security, safety or quality of such Third Party
+    Sites or Products. You are solely responsible for ensuring that any such Third
+    Party Sites and Products meet your needs. In no event will we be responsible or
+    liable for any information, services or products provided by such Third Party
+    Sites or for their failure to provide any such information, services or products
+    to you. We have no control over, and assume no responsibility for, the content,
+    privacy policies, products, services or practices of any third party websites.
+    You should review such site’s privacy and return/refund policies before providing
+    any personal information or purchasing products or services from such sites. In
+    addition, we will not and cannot censor or edit the content of any third-party
+    site.</p><p>We may make certain products and services from our partners available
+    through the Service, either directly or through a link. You agree that any purchase
+    from such partners shall be a separate transaction between you and our partner.
+    You further acknowledge and agree that we may receive a commission or other payment
+    for your purchase.</p><p><strong>Miscellaneous Provisions</strong></p><p>Suggestions
+    and Feedback. You understand and agree that any ideas or suggestions for improvements
+    to the service, including without limitation, enhancements, new functionality,
+    or concepts, shall be owned by UBQFIT . We shall have the right to use any such
+    ideas or suggestions in its sole discretion and with no payment or consideration
+    to you.</p><p>Assignment. You may not assign your rights hereunder. We can assign
+    our rights hereunder at any time without restriction.</p><p>Governing Law. To
+    the extent permitted by law, these Terms, your use of the Service are governed
+    by Florida law, without giving effect to its conflict of law provisions.</p><p>Entire
+    Agreement. These Terms together with the Privacy Policy and any other legal notices
+    or policies published by us through the Service, constitute the entire agreement
+    between you and UBQFIT concerning your use of the service. No UBQFIT employee
+    or agent has the authority to vary any of these Terms of Use or UBQFIT policies.
+    Any failure by us to insist on or enforce strict performance of these policies
+    shall not be construed as a waiver of any provision or any right it has to enforce
+    these policies, nor shall any course of conduct between UBQFIT and you or any
+    other party be deemed to modify any provision of these policies. Any modification
+    of these Terms must be in a writing executed by a duly authorized officer of UBQFIT
+    . If any provisions of these Terms or our policies are held to be void or unenforceable
+    by an arbitrator, court or other tribunal of competent jurisdiction, such provision
+    or policy shall be limited or eliminated to the minimum extent necessary and replaced
+    with a valid provision that best embodies the intent of the provision. Any invalidity
+    of such provision shall not affect the validity of the remaining provisions of
+    these Terms or the policies and such other provisions shall remain in full force
+    and effect.</p><p>Notices. You agree that any notice, agreements, disclosure or
+    other communications that we send to you electronically will satisfy any legal
+    communication requirements, including that such communications be in writing.</p><p><strong>Arbitration
+    Provisions</strong></p><p>ANY CONTROVERSY OR DISPUTE BETWEEN UBQFIT AND YOU ARISING
+    OUT OF OR RELATED TO THESE TERMS OF USE AND/OR YOUR USE OF THE SERVICE THAT CANNOT
+    BE SETTLED BY MUTUAL AGREEMENT SHALL BE EXCLUSIVELY AND FINALLY SETTLED BY ARBITRATION.
+    THE ARBITRATION SHALL BE BEFORE THE AMERICAN ARBITRATION ASSOCIATION (THE “AAA”),
+    IN MIAMI, FL, AND SHALL BE GOVERNED BY THE LAWS OF THE STATE OF FLORIDA.</p><p>ALL
+    NOTICES AND REQUESTS FOR ARBITRATION SHALL BE MADE IN COMPLIANCE WITH THE RULES
+    SET FORTH BY THE AAA. IN THE EVENT THAT ANY PARTY TO THIS AGREEMENT DESIRES TO
+    SEEK ARBITRATION, IN ADDITION TO COMPLIANCE WITH THE RULES SET FORTH BY THE AAA,
+    THE PARTY REQUESTING ARBITRATION SHALL GIVE WRITTEN NOTICE TO THE OTHER PARTY
+    AT LEAST TEN (10) DAYS PRIOR TO FILING ITS REQUEST WITH THE AAA. THIS NOTICE SHALL
+    SET FORTH THE NATURE OF THE DISPUTE, THE AMOUNT INVOLVED (IF ANY), AND THE REMEDY
+    SOUGHT.</p><p>YOU AND WE AGREE THAT ANY CLAIM SHALL BE BROUGHT IN THE PARTY''S
+    INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS
+    OR REPRESENTATIVE PROCEEDING, THEREBY WAIVING THE RIGHT TO PARTICIPATE AS A CLASS
+    REPRESENTATIVE OR CLASS MEMBER IN A CLASS ACTION RELATING IN ANY WAY TO A DISPUTE.</p><p>THE
+    PARTIES UNDERSTAND THAT ARBITRATION IS FINAL AND BINDING ON THE PARTIES. THE PARTIES
+    FURTHER UNDERSTAND THAT BY SIGNING THIS AGREEMENT THEY ARE WAIVING THEIR RIGHT
+    TO SEEK REMEDIES IN COURT, INCLUDING THE RIGHT TO A JURY TRIAL. NOTWITHSTANDING
+    THIS PROVISION, THE PARTIES AGREE THAT UBQFIT MAY SEEK IMMEDIATE INJUNCTIVE RELIEF
+    IN ANY COURT HAVING JURISDICTION OVER THE SUBJECT MATTER OR PERSONS FOR WHICH
+    RELIEF IS SOUGHT. JUDGMENT ON ANY AWARD RENDERED BY THE ARBITRATOR(S) MUST BE
+    ENTERED AND CONFIRMED EXCLUSIVELY IN ANY COURT HAVING JURISDICTION.</p><p>ALL
+    AWARDS SHALL BE MADE IN CONFORMITY WITH THE AAA RULES AND THE PARTIES UNDERSTAND
+    THAT THE ARBITRATOR(S) MAY AWARD MONETARY DAMAGES AND ARE AUTHORIZED TO GRANT
+    PRE-AWARD AND POST-AWARD INTEREST AT COMMERCIAL RATES ON ANY MONETARY AWARD. ANY
+    SUCH AWARDS SHALL BE SUBJECT THE LIMITATION OF LIABILITIES SET FORTH HEREIN.</p><p>You
+    consent and submit to the sole jurisdiction and venue of the state or federal
+    courts of the state of Florida.</p><p>Attorneys’ Fees.We shall be entitled to
+    our reasonable costs and expenses (including reasonable attorneys'' fees) incurred
+    in connection with the enforcement of these Terms of Use against you.</p><p></p><p></p><p><strong>How
+    to contact us</strong></p><p>If you have any questions regarding these Terms of
+    Use, you may contact us at <a href="mailto:info@ubqfit.com">info@UBQFIT.com.</a></p><p>These
+    Terms were last modified on Nov 28, 2018.</p><p>*****************************************</p>'
 - type: text
   name: submit_button_text
   label: submit_button_text
