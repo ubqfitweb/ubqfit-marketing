@@ -513,3 +513,5 @@ fields:
 - type: text
   name: submit_button_text
   label: submit_button_text
+pages:
+- terms-conditions.html
