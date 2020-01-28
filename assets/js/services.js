@@ -11,7 +11,7 @@ if (window.location.origin == "https://ubqfit-qa-website.augustasoftsol.com") {
     webURL = "https://ubqfit-qa-website.augustasoftsol.com";
     appBaseURL = "https://ubiquifit-qa.augustasoftsol.com";
 }
-else if (window.location.origin == "https://ubqfit.com") {
+else if (window.location.origin == "https://ubqfit.com" || window.location.origin == 'https://ubqfitweb.github.io') {
     // Production
     baseUrl = "https://api.ubqfit.com/api";
     webURL = 'https://ubqfit.com';
