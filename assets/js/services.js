@@ -307,7 +307,7 @@ function loadBlogDetail(value) {
         '<div class="width-100">' +
         '<div class="social-share">' +
         '<h2> Share to: </h2>' +
-        '<input type="hidden" id="blog_id_' + value.id + '" value="' + webURL + '/blog-detail.html?blog-id=' + value.id + '">' +
+        '<input type="hidden" id="blog_id_' + value.id + '" value="' + '{{ site.url }}{{ site.baseurl }}/blog-detail/index.html?blog-id=' + value.id + '">' +
         '<ul>' +
         '<li>' +
         '<a class="fb"  onclick="facebookShare(' + value.id + ')" href="javascript:void(0)">fb</a>' +
@@ -399,7 +399,7 @@ function loadBlog(blog, page) {
             '<div class="width-100">' +
             '<div class="social-share">' +
             '<h2> Share to: </h2>' +
-            '<input type="hidden" id="blog_id_' + value.id + '" value="' + webURL + '/blog-detail.html?blog-id=' + value.id + '">' +
+            '<input type="hidden" id="blog_id_' + value.id + '" value="' + '{{ site.url }}{{ site.baseurl }}/blog-detail/index.html?blog-id=' + value.id + '">' +
             '<ul>' +
             '<li>' +
             '<a class="fb"  onclick="facebookShare(' + value.id + ')" href="javascript:void(0)">fb</a>' +
