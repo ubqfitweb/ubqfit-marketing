@@ -518,7 +518,7 @@ function facebookShare(blogId) {
         FB.ui({
             method: 'share',
             quote: 'This is ubqfit blog.',
-            href: webURL + '/blog-detail.html?blog-id=' + blogId,
+            href: '{{ site.url }}{{ site.baseurl }}/blog-detail/index.html?blog-id=' + blogId,
             mobile_iframe: true,
             // redirect_uri: environment.appUrl
         }, (response) => {
@@ -539,7 +539,7 @@ function twitterShare(blogId) {
     const params = `scrollbars=no,resizable=no,status=yes,location=yes,toolbar=no,menubar=no,
         width=600,height=600,left=550,top=200`;
     const url = 'http://twitter.com/share?text=' + 'This is ubqfit blog.' +
-        '&url=' + webURL + '/blog-detail.html?blog-id=' + blogId + '&hashtags=ubqfit';
+        '&url=' + '{{ site.url }}{{ site.baseurl }}/blog-detail/index.html?blog-id=' + blogId + '&hashtags=ubqfit';
     console.log(url);
     const loginWindow = window.open(url, 'Twitter Share', params);
 }
@@ -549,7 +549,7 @@ function twitterShare(blogId) {
 function linkedInShare(blogId) {
     const params = `scrollbars=no,resizable=no,status=yes,location=yes,toolbar=no,menubar=no,
         width=600,height=600,left=550,top=200`;
-    const url = 'https://www.linkedin.com/shareArticle?mini=true&url=' + webURL + '/blog-detail.html?blog-id%3D' + blogId +
+    const url = 'https://www.linkedin.com/shareArticle?mini=true&url=' + '{{ site.url }}{{ site.baseurl }}/blog-detail/index.html?blog-id%3D' + blogId +
         '&title=' + 'This is ubqfit blog' + '&source=LinkedIn';
     console.log(url);
     const loginWindow = window.open(url, 'LinkedIn Share', params);
