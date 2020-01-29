@@ -287,7 +287,7 @@ function loadBlogDetail(value) {
     html += '<div class="blog-view">' +
         '<div class="blog-top">' +
         '<div class="float-left margin-right-15">' +
-        '<img src="images/profile-img.png">' +
+        '<img src={{ site.url }}{{ site.baseurl }}/assets/images/profile-img.png>' +
         '</div>' +
         '<h1> UBQFIT </h1>' +
         '<span>' + blogDate + '</span>' +
