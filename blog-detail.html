@@ -4,32 +4,8 @@ hero_video_portrait: "/assets/images/hero_vid_portrait.mp4"
 hero_video_landscape: "/assets/images/hero_vid_landscape.mp4"
 hero_video_title: DMCA Policy
 hero_video_description: DMCA Policy.
-
 ---
-
 <div class="containers">
-  <div class="download-app appinstall-view" id="download-app">
-    <div class="badge-wrapper">
-      <div class="width-100 top-banner">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/app-dash-view.png">
-      </div>
-      <div class="appinstall-details">
-        <div class="width-100 bottom-logo">
-          <img src="{{ site.url }}{{ site.baseurl }}/assets/images/logo.svg" title="Logo" alt="Logo" width="125px" height="35px">
-          <p>
-            For the best experience, download the application.
-          </p>
-        </div>
-        <div class="width-100 bottom-app">
-          <a class="app-badge"
-            href='https://play.google.com/store/apps/details?id=com.ubqfitinc.ubqfit&hl=en_US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
-              src="https://ubqfit.com/images/googleplay.png"></a>
-          <a class="app-badge" href="https://apps.apple.com/us/app/ubqfit/id1441253233" target="_blank"
-            rel="noreferrer noopener"><img src="https://ubqfit.com/images/apple.png"></a>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="width-100">
     <div class="row">
       <div class="home-mainpage">
@@ -38,14 +14,15 @@ hero_video_description: DMCA Policy.
             <div class="row margin-0">
               <div class="width-100 home-banner heroContainer">
                 <div class="width-100">
-                  <video class="heroVideo portrait" poster="{{ site.url }}{{ site.baseurl }}/assets/images/img/workout.jpg" width="100%" height="100%" muted
-                    playsinline preload autoplay loop>
-                    <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait }}" type="video/mp4" class="portrait">
+                  <video class="heroVideo portrait" poster="{{ site.url }}{{ site.baseurl }}/assets/images/img/workout.jpg" muted playsinline preload autoplay
+                    loop>
+                    <source src="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_portrait.mp4" type="video/mp4" class="portrait">
                     Your browser does not support the video tag.
                   </video>
-                  <video class="heroVideo landscape" poster="{{ site.url }}{{ site.baseurl }}/assets/images/img/workout.jpg" width="100%" height="100%" muted
-                    playsinline preload autoplay loop>
-                    <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape }}" type="video/mp4" class="landscape">
+
+                  <video class="heroVideo landscape" poster="{{ site.url }}{{ site.baseurl }}/assets/images/img/workout.jpg" muted playsinline preload autoplay
+                    loop>
+                    <source src="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_landscape.mp4" type="video/mp4" class="landscape">
                     Your browser does not support the video tag.
                   </video>
                   <div class="banner-tittle">
@@ -56,22 +33,17 @@ hero_video_description: DMCA Policy.
               </div>
             </div>
           </div>
-          <div class="blog-section">
+          <div class="width-100">
+            <div class="blog-post-wrapper">
+              <img id="loading-image" class="blog_loading_img" src="{{ site.url }}{{ site.baseurl }}/assets/images/loading.gif" style="display:none;" />
+            </div>
           </div>
-          <img id="loading-image" class="blog_loading_img" src="{{ site.url }}{{ site.baseurl }}/assets/images/loading.gif" style="display:none;" />
         </div>
       </div>
     </div>
-    <div class="no_more">No more blog to load</div>
-    <input type="hidden" id="page" value="1">
-    <input type="hidden" id="pagination_flag" value="0">
   </div>
   <!--   containers -->
-  <div class="footer-version">
-    <p>
-      V 2.1
-    </p>
-  </div>
+
   <!-- PreLaunch Modal step 1-->
   <div class="modal-backdrop-prelaunch">
     <div class="modal-container">
@@ -176,24 +148,21 @@ hero_video_description: DMCA Policy.
       </div>
     </div>
   </div>
+
   <!-- js Files -->
   <script src="{{ site.url }}{{ site.baseurl }}/assets/js/jquery-3.4.1.min.js"></script>
-  <script type='text/javascript'>
-    (function () {
+  <script type='text/javascript'>(function () {
       var tp = document.createElement('script');
       tp.src = 'https://textpuff.com/textwidget/js/textpuffv2.js';
-      tp.type = 'text/javascript';
-      tp.async = 'true';
+      tp.type = 'text/javascript'; tp.async = 'true';
       tp.onload = tp.onreadystatechange = function () {
         var rs = this.readyState;
-        if (rs && rs != 'complete' && rs != 'loaded') return;
-        try {
-          var lng = 'en';
-          var sbtp = '';
+        if (rs && rs != 'complete' && rs != 'loaded') return; try {
+          var lng = 'en'; var sbtp = '';
           verify._vd('b88dbd22ff117ae209becaf4c24950d293b3d2b5', 'tp1', sbtp, lng);
-        } catch (e) { }
-      };
-      var s = document.getElementsByTagName('script')[0];
+        }
+        catch (e) { }
+      }; var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(tp, s);
     })();
   </script>
@@ -201,8 +170,8 @@ hero_video_description: DMCA Policy.
   <!-- intel-input phone number validation -->
   <script src="{{ site.url }}{{ site.baseurl }}/assets/js/intl-tel-input/build/js/intlTelInput.js"></script>
   <!-- Start of ubqfit Zendesk Widget script -->
-  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=70d2f53e-c4b9-48da-bc27-e5646f666d9d">
-  </script>
+  <script id="ze-snippet"
+    src="https://static.zdassets.com/ekr/snippet.js?key=70d2f53e-c4b9-48da-bc27-e5646f666d9d"> </script>
   <!-- End of ubqfit Zendesk Widget script -->
   <script src="{{ site.url }}{{ site.baseurl }}/assets/js/custom.js"></script>
   <script src="{{ site.url }}{{ site.baseurl }}/assets/js/moment.js"></script>
@@ -224,12 +193,15 @@ hero_video_description: DMCA Policy.
       $('#' + id).removeClass('hide');
     }
 
+
     // URL Redirect
 
     function goToURL() {
       //window.open('https://ubqfit.com/', '_blank');
     }
+
   </script>
+
   <style type="text/css">
     .src-component-launcher-WidgetLauncher-wrapper {
       display: none;
