@@ -2,8 +2,8 @@
 layout: default
 hero_video_portrait: "/assets/images/hero_vid_portrait.mp4"
 hero_video_landscape: "/assets/images/hero_vid_landscape.mp4"
-hero_video_title: DMCA Policy
-hero_video_description: DMCA Policy.
+hero_video_title: Blog
+hero_video_description: Read about the latest fitness tricks and trends.
 ---
 <div class="containers">
   <div class="width-100">
@@ -16,18 +16,17 @@ hero_video_description: DMCA Policy.
                 <div class="width-100">
                   <video class="heroVideo portrait" poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" muted playsinline preload autoplay
                     loop>
-                    <source src="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_portrait.mp4" type="video/mp4" class="portrait">
+                    <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait }}" type="video/mp4" class="portrait">
                     Your browser does not support the video tag.
                   </video>
-
                   <video class="heroVideo landscape" poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" muted playsinline preload autoplay
                     loop>
-                    <source src="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_landscape.mp4" type="video/mp4" class="landscape">
+                    <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape }}" type="video/mp4" class="landscape">
                     Your browser does not support the video tag.
                   </video>
                   <div class="banner-tittle">
-                    <h1>Blog</h1>
-                    <h2>Read about the latest fitness tricks and trends.</h2>
+                    <h1>{{ page.hero_video_title }}</h1>
+                    <h2>{{ page.hero_video_description }}</h2>
                   </div>
                 </div>
               </div>
