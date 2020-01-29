@@ -91,7 +91,7 @@ function findGetParameter(parameterName) {
 var path = window.location.pathname;
 var page = path;
 
-if (page == 'blog-detail.html') {
+if (page == '/blog-detail/index.html' || page == '/ubqfit-marketing/blog-detail/index.html') {
     var blogId = findGetParameter('blog-id');
     getBlogDetail(blogId);
 } else if (page == 'index.html' || page == '') {
