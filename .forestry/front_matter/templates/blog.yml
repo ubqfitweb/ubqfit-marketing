@@ -26,4 +26,5 @@ fields:
   label: Hero Video Description
   default: Read about the latest fitness tricks and trends.
 pages:
+- blog-detail.html
 - blog.html
