@@ -388,7 +388,7 @@ function loadBlog(blog, page) {
             '<h1> UBQFIT </h1>' +
             '<span>' + blogDate + '</span>' +
             '</div>' +
-            '<div class="blog-center">' +
+            '<div class="blog-center testclass">' +
             '<a href="{{ site.url }}{{ site.baseurl }}/blog-detail?blog-id=' + value.id + '">' +
             '<img onerror="loadDefaultImage(this)" src="' + blogImage + '" height="200px" width="100%">' +
             '</a>' +
