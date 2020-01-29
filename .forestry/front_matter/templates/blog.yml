@@ -1,0 +1,19 @@
+---
+label: Blog
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: hero_video_portrait
+  label: hero_video_portrait
+- type: text
+  name: hero_video_landscape
+  label: hero_video_landscape
+- type: text
+  name: hero_video_title
+  label: hero_video_title
+- type: text
+  name: hero_video_description
+  label: hero_video_description
