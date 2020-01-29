@@ -389,7 +389,7 @@ function loadBlog(blog, page) {
             '<span>' + blogDate + '</span>' +
             '</div>' +
             '<div class="blog-center testclass">' +
-            '<a href="{{ site.url }}{{ site.baseurl }}/blog-detail?blog-id=' + value.id + '">' +
+            '<a href="{{ site.url }}{{ site.baseurl }}/blog-detail/index.html?blog-id=' + value.id + '">' +
             '<img onerror="loadDefaultImage(this)" src="' + blogImage + '" height="200px" width="100%">' +
             '</a>' +
             '<div class="width-100">' +
