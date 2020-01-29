@@ -1,3 +1,5 @@
+---
+---
 // Dev
 var baseUrl = "https://ubqfit-dev-api.augustasoftsol.com/api";
 var webURL = "https://ubqfit-dev-website.augustasoftsol.com";
@@ -381,7 +383,7 @@ function loadBlog(blog, page) {
         html += '<div class="blog-view">' +
             '<div class="blog-top">' +
             '<div class="float-left margin-right-15">' +
-            '<img src=' + webURL + '/assets/images/profile-img.png">' +
+            '<img src={{ site.url }}{{ site.baseurl }}/assets/images/profile-img.png">' +
             '</div>' +
             '<h1> UBQFIT </h1>' +
             '<span>' + blogDate + '</span>' +
