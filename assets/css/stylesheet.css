@@ -204,7 +204,8 @@ ul {
 
 .containers {
     width: 100%;
-    display: inline-table
+    display: inline-table;
+    background: #870509;
 }
 
 .header-top {
@@ -3159,7 +3160,8 @@ login .font-bold {
 .download-app[data-is-mobile="true"].appinstall-view .top-banner img {
     width: 100%;
     /* height: 100%; */
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     position: fixed;
     top: 0;
 }
