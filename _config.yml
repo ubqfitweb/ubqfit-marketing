@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: UBQFIT
-email: your-email@example.com
+email: info@ubqfit.com
 description: Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments
 keywords: fitness app,fitness partner,gym,gym trainer app, health and fitness app, workout app, health app
 baseurl: "ubqfit-marketing" # the subpath of your site, e.g. /blog
@@ -53,5 +53,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-css: 
+css:
   css_dir: _css
