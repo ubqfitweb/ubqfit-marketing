@@ -198,48 +198,48 @@ function loadTrendingSections(trendingData) {
 
 // Get Instagram Section
 
-function getInstagramSections() {
-    $.ajax({
-        url: baseUrl + "/SocialData/GetInstagramPosts?pageNumber=1&pageSize=10",
-        method: "GET",
-        dataType: "json",
-        crossDomain: true,
-        contentType: "application/json; charset=utf-8",
-        cache: false,
-        beforeSend: function () {
-            $("#loading-image").show();
-        },
-        success: function (data) {
-            //console.log('Instagram Sections', data);
-            if (typeof data.content.records !== 'undefined') {
-                loadInstagram(data.content.records);
-            } else {
-                loadError('instagram-feed');
-            }
-            $("#loading-image").hide();
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            console.log('Error', errorThrown);
-        }
-    });
-}
+// function getInstagramSections() {
+//     $.ajax({
+//         url: baseUrl + "/SocialData/GetInstagramPosts?pageNumber=1&pageSize=10",
+//         method: "GET",
+//         dataType: "json",
+//         crossDomain: true,
+//         contentType: "application/json; charset=utf-8",
+//         cache: false,
+//         beforeSend: function () {
+//             $("#loading-image").show();
+//         },
+//         success: function (data) {
+//             //console.log('Instagram Sections', data);
+//             if (typeof data.content.records !== 'undefined') {
+//                 loadInstagram(data.content.records);
+//             } else {
+//                 loadError('instagram-feed');
+//             }
+//             $("#loading-image").hide();
+//         },
+//         error: function (jqXHR, textStatus, errorThrown) {
+//             console.log('Error', errorThrown);
+//         }
+//     });
+// }
 
 // Load Instagram Section
 
-function loadInstagram(instagram) {
-    var html = '';
-    $.each(instagram, function (index, value) {
-        html += '<div class="instagram-block">';
-        if (value.type === 'video') {
-            html += '<video class="watcher pointer landscape" poster="' + value.lowResolution_Media_Url + '" width="100%" height="100%" muted playsinline loop preload="auto" autoplay><source src="' + value.standard_Media_Url + '" type="video/mp4" class="landscape">Your browser does not support the video tag.</video>'
-        } else {
-            html += '<img class="watcher pointer" width="100%" src="' + value.standard_Media_Url + '">';
-        }
-        html += '<a target="new" href="' + value.instagramLink + '"><span class="instagram-feed-hover"></span></a>';
-        html += '</div>';
-    });
-    $('.wrapper-to-center').html(html);
-}
+// function loadInstagram(instagram) {
+//     var html = '';
+//     $.each(instagram, function (index, value) {
+//         html += '<div class="instagram-block">';
+//         if (value.type === 'video') {
+//             html += '<video class="watcher pointer landscape" poster="' + value.lowResolution_Media_Url + '" width="100%" height="100%" muted playsinline loop preload="auto" autoplay><source src="' + value.standard_Media_Url + '" type="video/mp4" class="landscape">Your browser does not support the video tag.</video>'
+//         } else {
+//             html += '<img class="watcher pointer" width="100%" src="' + value.standard_Media_Url + '">';
+//         }
+//         html += '<a target="new" href="' + value.instagramLink + '"><span class="instagram-feed-hover"></span></a>';
+//         html += '</div>';
+//     });
+//     $('.wrapper-to-center').html(html);
+// }
 
 
 // Load API Error
@@ -762,7 +762,7 @@ function inWords (num) {
     str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + '' : '';
     return str;
 }
-//Load pricing 
+//Load pricing
 
 function loadPricing() {
     $("#loader").show();
@@ -794,7 +794,7 @@ function loadPricing() {
             console.log('freeWatcher', freeWatcher);
             console.log('memberWatcher', memberWatcher);
             console.log('traineeWatcher', traineeWatcher);
-            
+
             $('#freeWatcherPrice').append("$"+freeWatcher[0].price + " / Month");
             $('#memberWatcherPrice').append("$"+memberWatcher[0].price + " / Month");
             $('#traineeWatcherPrice').append("$"+traineeWatcher[0].price + " / Month");
@@ -804,7 +804,7 @@ function loadPricing() {
             $('#traineeWatcherDiscount').append(traineeWatcher[0].discountOnSession + "% Session Discounts");
             let formatStr = inWords(traineeWatcher[0].freeSessions);
             $('#traineeWatcherPubSession').append(formatStr.charAt(0).toUpperCase() + formatStr.slice(1)+ " free public sessions");
-            
+
             $("#loading-image").hide();
         },
         error: function (jqXHR, textStatus, errorThrown) {
@@ -814,5 +814,5 @@ function loadPricing() {
     });
 }
 function openSignUpModal() {
-    window.location.href = appBaseURL; 
+    window.location.href = appBaseURL;
 }
