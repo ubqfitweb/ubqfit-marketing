@@ -24,7 +24,7 @@ section_three_description: Lead a fitness event or accept 1-on-1 training sessio
             <div class="width-100 home-banner heroContainer">
                 <div class="width-100">
                     <video class="heroVideo portrait"
-                        poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" muted playsinline
+                        poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.jpg" muted playsinline
                         preload autoplay loop>
                         <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait }}"
                             type="video/mp4" class="portrait">
@@ -32,7 +32,7 @@ section_three_description: Lead a fitness event or accept 1-on-1 training sessio
                     </video>
 
                     <video class="heroVideo landscape"
-                        poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" muted playsinline
+                        poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.jpg" muted playsinline
                         preload autoplay loop>
                         <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape }}"
                             type="video/mp4" class="landscape">
@@ -132,36 +132,7 @@ section_three_description: Lead a fitness event or accept 1-on-1 training sessio
         </div>
     </div>
 </div>
-<!-- Section -->
-<div class="instagram-feed relative">
-    <div class="wrapper-to-center">
-        <div class="instagram-block">
-            <img class="watcher pointer" width="100%"
-                src="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" alt="Instagram Placeholder">
-            <span class="instagram-feed-hover"></span>
-        </div>
-        <div class="instagram-block">
-            <img class="watcher pointer" width="100%"
-                src="{{ site.url }}{{ site.baseurl }}/assets/images/tranier-ex.png" alt="Instagram Placeholder">
-            <span class="instagram-feed-hover"></span>
-        </div>
-        <div class="instagram-block">
-            <img class="watcher pointer" width="100%"
-                src="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" alt="Instagram Placeholder">
-            <span class="instagram-feed-hover"></span>
-        </div>
-        <div class="instagram-block">
-            <img class="watcher pointer" width="100%"
-                src="{{ site.url }}{{ site.baseurl }}/assets/images/tranier-ex.png" alt="Instagram Placeholder">
-            <span class="instagram-feed-hover"></span>
-        </div>
-        <div class="instagram-block">
-            <img class="watcher pointer" width="100%"
-                src="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" alt="Instagram Placeholder">
-            <span class="instagram-feed-hover"></span>
-        </div>
-    </div>
-</div>
+{% include instagram.html %}
 <!--   containers -->
 <div class="modal-backdrop">
     <div class="modal-container watch-video-popup">
