@@ -22,10 +22,10 @@ title: UBQFIT
 email: info@ubqfit.com
 description: Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments
 keywords: fitness app,fitness partner,gym,gym trainer app, health and fitness app, workout app, health app
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://ubqfit.com/" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/ubqfit-marketing" # the subpath of your site, e.g. /blog
-url: "https://ubqfitweb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ubqfit.com/" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "/ubqfit-marketing" # the subpath of your site, e.g. /blog
+# url: "https://ubqfitweb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
