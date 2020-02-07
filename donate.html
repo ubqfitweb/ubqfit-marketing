@@ -83,7 +83,7 @@
                 "sessionId": data.sessionId
             }
             if (formatData.token == null || formatData.userid == null || formatData.amount == null) {
-                window.location.href = "{{ site.url }}{{ site.baseurl }}/index.html";
+                window.location.href = "{{ site.url }}{{ site.baseurl }}/";
             } else {
                 localStorage.setItem("payData", JSON.stringify(formatData));
                 window.location.href = "{{ site.url }}{{ site.baseurl }}/pay-your-donation.html";

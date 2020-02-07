@@ -83,7 +83,7 @@
                 "type": data.type
             }
             if (formatData.token == null || formatData.eventid == null || formatData.amount == null) {
-                window.location.href = "{{ site.url }}{{ site.baseurl }}/index.html";
+                window.location.href = "{{ site.url }}{{ site.baseurl }}/";
             } else {
                 localStorage.setItem("eventPayData", JSON.stringify(formatData));
                 window.location.href = "{{ site.url }}{{ site.baseurl }}/pay-join-event.html";
