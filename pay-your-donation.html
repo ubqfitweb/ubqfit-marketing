@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UBQFIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Required meta tags -->
+    <meta name=keywords
+        content="fitness app,fitness partner,gym,gym trainer app, health and fitness app, workout app, health app">
+    <meta name=description
+        content="Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments">
+    <meta property=og:image title="UBQFIT" content=images/UBQFIT-Banner.png />
+    <link rel=image_src title="UBQFIT" href="images/UBQFIT-Banner.png" />
+    <meta name="author" content="UBQFIT">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0e0e12" />
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2546244208988010');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2546244208988010&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Open Graphic Tags -->
+    <meta property="og:title" content="UBQFIT">
+    <meta property="og:site_name" content="UBQFIT">
+    <meta property="og:url" content="https://ubqfit.com/">
+    <meta property="og:description"
+        content="Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments">
+    <meta property="og:video" content="images/video/hero_vid_landscape.mp4" />
+    <meta property="og:video:secure_url" content="images/video/hero_vid_landscape.mp4" />
+    <meta property="og:video:type" content="application/x-shockwave-flash" />
+    <meta property="og:video:width" content="400" />
+    <meta property="og:video:height" content="300" />
+
+
+    <!-- google meta -->
+    <meta name="google-signin-client_id"
+        content="9584718907-nvbobbkft3ln4ackb5hlkn8jl27khf1l.apps.googleusercontent.com">
+    <meta name="google-signin-client_id"
+        content="397289741886-ptcimf1bctecvm562fi2j2eukl2kgad5.apps.googleusercontent.com">
+    <!-- google INIT -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Pintrest meta -->
+    <meta name="p:domain_verify" content="ada36ea9b646725c3c922c8d964104bf" />
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="/js/intl-tel-input/build/css/intlTelInput.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AcpqpLU9mJVndYD2ZWZTzvX9RIRit3_PgXC2tqChdesczoelHFAuIKPhPZuKsgXk9tBqyPh3roTY4Hy3&vault=true"></script> -->
+    <script>
+        function payPalAction() {
+            var payData = JSON.parse(localStorage.getItem("payData"));
+            if (!payData) {
+                // window.location.href="index.html";
+            }
+
+            // Render the PayPal button into #paypal-button-container
+            paypal.Buttons({
+                style: {
+                    height: 40,
+                    size: 'responsive',
+                    color: 'white'
+                },
+                // Set up the transaction
+                createOrder: function (data, actions) {
+                    // $("#loader").show();
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: payData.amount
+                            }
+                        }],
+                        // application_context: {
+                        //     shipping_preference: 'NO_SHIPPING'
+                        //   }
+                    });
+                },
+
+                // Finalize the transaction
+                onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (details) {
+                        // Show a success message to the buyer
+                        // console.log(details);
+                        //  $("#loader").hide();
+                        if (details.status == "COMPLETED" || details.status == "PENDING" || details
+                            .status == "CREATED" || details.status == "SAVED" || details.status ==
+                            "APPROVED") {
+                            //  alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                            postDonate(payData, details);
+                        } else {
+                            if (payData.type == "1") {
+                                window.location.href = payData.redirectUri + "?status=" + details
+                                    .status;
+                            } else {
+                                window.location.href = "payment-status.html?status=" + details
+                                    .status;
+                            }
+                            // window.location.href="payment-status.html?status="+details.status;
+                        }
+
+                    });
+                }
+            }).render('#paypal-button-container');
+        }
+    </script>
+    <script src="js/services.js"></script>
+</head>
+
+<body>
+    <header class="main-header width-100">
+        <!-- <div class="mainlogo">
+            <a class="logo-main mouse-default" href="javascript:void(0)"> Logo </a>
+        </div> -->
+    </header>
+    <div class="loader-wraper" id="loader">
+        <div class="spinner">
+            <img src="images/red_loading-ring.svg" alt="loader">
+        </div>
+    </div>
+    <!-- <div class="pay-with-text">Pay with:</div> -->
+    <div class="button-global-container">
+        <!-- <div id="paypal-button-container"></div> -->
+        <div id="paypal-button-container"></div>
+    </div>
+</body>
+<script>
+    $("#loader").hide();
+</script>
+<style type="text/css">
+    .loader-wraper {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        min-height: 100%;
+        background: #0000008f;
+        z-index: 999999;
+    }
+
+    .spinner {
+        margin: 0px auto;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        font-size: 10px;
+        position: fixed;
+        top: 45%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        /* background-color: #fff; */
+        border-radius: 50%;
+    }
+
+    .spinner img {
+        width: 100%;
+    }
+
+    .src-component-launcher-WidgetLauncher-wrapper {
+        display: none;
+    }
+
+    #paypal-button-container {
+        position: absolute;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 100%;
+        /* left: 5%; */
+    }
+
+    .pay-with-text {
+        position: absolute;
+        justify-content: center;
+        top: 25%;
+        left: 5%;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'open sans', sans-serif;
+        color: #fff;
+    }
+
+    #paypal-button-container button {
+        width: 100%;
+    }
+
+    #paypal-button-container body {
+        width: 100%;
+    }
+</style>
+
+</html>

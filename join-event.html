@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UBQFIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- Required meta tags -->
+  <meta name=keywords content="fitness app,fitness partner,gym,gym trainer app, health and fitness app, workout app, health app">
+  <meta name=description content="Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments">
+  <meta property=og:image title="UBQFIT" content=images/UBQFIT-Banner.png />
+  <link rel=image_src title="UBQFIT" href="images/UBQFIT-Banner.png" />
+  <meta name="author" content="UBQFIT">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0e0e12" />
+  <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2546244208988010');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2546244208988010&ev=PageView&noscript=1"
+    /></noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- Open Graphic Tags -->
+  <meta property="og:title" content="UBQFIT">
+  <meta property="og:site_name" content="UBQFIT">
+  <meta property="og:url" content="https://ubqfit.com/">
+  <meta property="og:description" content="Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments">
+  <meta property="og:video" content="images/video/hero_vid_landscape.mp4" />
+  <meta property="og:video:secure_url" content="images/video/hero_vid_landscape.mp4" />
+  <meta property="og:video:type" content="application/x-shockwave-flash" />
+  <meta property="og:video:width" content="400" />
+  <meta property="og:video:height" content="300" />
+
+
+    <!-- google meta -->
+    <meta name="google-signin-client_id"
+        content="9584718907-nvbobbkft3ln4ackb5hlkn8jl27khf1l.apps.googleusercontent.com">
+    <meta name="google-signin-client_id"
+        content="397289741886-ptcimf1bctecvm562fi2j2eukl2kgad5.apps.googleusercontent.com">
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        //const data = {};
+        function getUrlVars() {
+            var vars = [],
+                hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+
+            var data = vars;
+            if (i == hashes.length) {
+                //console.log(vars);
+                navigateToPay(data);
+            }
+        }
+        getUrlVars();
+        // data['token'] = urlParams.get('token');
+        // data['userId'] = urlParams.get('userid');
+        // data['amount'] = urlParams.get('amount');
+        function navigateToPay(data) {
+            var formatData = {
+                "token": data.token,
+                "eventid": data.eventid,
+                "amount": data.amount,
+                "redirectUri": data.redirectionUri,
+                "type": data.type
+            }
+            if (formatData.token == null || formatData.eventid == null || formatData.amount == null) {
+                window.location.href = "index.html";
+            } else {
+                localStorage.setItem("eventPayData", JSON.stringify(formatData));
+                window.location.href = "pay-join-event.html";
+            }
+        }
+    </script>
+</head>
+
+<body></body>

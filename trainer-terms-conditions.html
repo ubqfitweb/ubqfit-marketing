@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>UBQFIT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+   <!-- Required meta tags -->
+   <meta name=keywords content="fitness app,fitness partner,gym,gym trainer app, health and fitness app, workout app, health app">
+   <meta name=description content="Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments">
+   <meta property=og:image title="UBQFIT" content=images/UBQFIT-Banner.png />
+   <link rel=image_src title="UBQFIT" href="images/UBQFIT-Banner.png" />
+   <meta name="author" content="UBQFIT">
+   <meta name="robots" content="index, follow">
+   <meta name="theme-color" content="#0e0e12" />
+	 <!-- Facebook Pixel Code -->
+		 <script>
+			 !function(f,b,e,v,n,t,s)
+			 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			 n.queue=[];t=b.createElement(e);t.async=!0;
+			 t.src=v;s=b.getElementsByTagName(e)[0];
+			 s.parentNode.insertBefore(t,s)}(window, document,'script',
+			 'https://connect.facebook.net/en_US/fbevents.js');
+			 fbq('init', '2546244208988010');
+			 fbq('track', 'PageView');
+		 </script>
+		 <noscript><img height="1" width="1" style="display:none"
+			 src="https://www.facebook.com/tr?id=2546244208988010&ev=PageView&noscript=1"
+		 /></noscript>
+	 <!-- End Facebook Pixel Code -->
+   <!-- Open Graphic Tags -->
+   <meta property="og:title" content="UBQFIT">
+   <meta property="og:site_name" content="UBQFIT">
+   <meta property="og:url" content="https://ubqfit.com/">
+   <meta property="og:description" content="Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments">
+   <meta property="og:video" content="images/video/hero_vid_landscape.mp4" />
+   <meta property="og:video:secure_url" content="images/video/hero_vid_landscape.mp4" />
+   <meta property="og:video:type" content="application/x-shockwave-flash" />
+   <meta property="og:video:width" content="400" />
+   <meta property="og:video:height" content="300" />
+
+
+	<!-- google meta -->
+	<meta name="google-signin-client_id" content="9584718907-nvbobbkft3ln4ackb5hlkn8jl27khf1l.apps.googleusercontent.com">
+	<meta name="google-signin-client_id"
+		content="397289741886-ptcimf1bctecvm562fi2j2eukl2kgad5.apps.googleusercontent.com">
+	<!-- google INIT -->
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<!-- Pintrest meta -->
+	<meta name="p:domain_verify" content="ada36ea9b646725c3c922c8d964104bf" />
+
+	<!-- CSS files -->
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="/js/intl-tel-input/build/css/intlTelInput.min.css">
+	<style>
+		/* body {
+        background-color: #0e0e12;
+        margin: 0px;
+        padding: 10px;
+        font-family: 'Open Sans';
+        line-height: 24px;
+    } */
+
+		.terms-container p,
+		.terms-container ol,
+		.terms-container li {
+			font-size: 1rem;
+			line-height: 1.75rem;
+		}
+
+		.terms-container {
+			/*max-width: 1200px;*/
+			width: 100%;
+			color: #fff;
+		}
+
+		.ubqfittext {
+			text-decoration: none;
+			font-weight: 600;
+		}
+
+		.ubqfittext i {
+			font-style: normal;
+			color: #e6130b;
+		}
+
+		address {
+			font-style: normal;
+			margin-bottom: 10px;
+		}
+
+		.terms-container a {
+			color: #e6130b;
+		}
+
+		.list-pad {
+			padding-left: 15px;
+		}
+	</style>
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="containers">
+		<div class="header-top center">
+			<p>
+				Get 95% off on a 1-on-1 Session. <a style="white-space: nowrap;" class="review_btn_prelaunch"
+					href="javascript:void(0)" (click)="openModal('signUpModal')"> Sign Up</a>
+			</p>
+		</div>
+		<header>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.svg" title="Logo" alt="Logo" width="125px" height="35px">
+				</a>
+			</div>
+			<div class="menumobileview">
+				<a class="login" href="javascript:void(0)">Log In</a>
+				<a class="mobile-view" href="javascript:void(0)">Mobile-view</a>
+			</div>
+			<div class="menu nav">
+				<ul>
+					<li>
+            <a href="gift.html">Gift Card</a>
+          </li>
+					<li>
+						<a href="trainer.html">Trainer</a>
+					</li>
+					<li>
+						<a href="trainee.html">Trainee</a>
+					</li>
+					<li class="community">
+						<a class="community_menu dropdown-mobile" href="javascript:void(0)">Community</a>
+						<ul class="submenu">
+							<li>
+								<a href="ourstory.html">Our Story</a>
+							</li>
+							<li>
+								<a href="testimonials.html">
+									Testimonials</a>
+							</li>
+							<li>
+								<a href="blog.html">
+									Blog</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="pricing.html">Pricing</a>
+					</li>
+					<li class="login">
+						<a href="javascript:void(0)">Log In</a>
+					</li>
+					<li class="mobile-signup">
+						<a href="javascript:void(0)">Sign Up</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+
+
+		<div class="width-100">
+
+			<div class="row">
+				<div class="home-mainpage">
+					<div class="inner-page">
+						<div class="width-100 relative">
+							<div class="row margin-0 relative">
+								<div class="width-100 home-banner heroContainer">
+									<div class="width-100">
+										<!--<video class="heroVideo portrait" poster="images/home-banner.png" width="100%" height="100%" muted playsinline preload autoplay loop>
+                        <source src="images/video/loin_porit.mp4" type="video/mp4" class="portrait">
+                        Your browser does not support the video tag.
+                    </video>-->
+
+										<video class="heroVideo portrait" poster="images/img/workout.jpg" muted playsinline preload autoplay
+											loop>
+											<source src="images/video/hero_vid_portrait.mp4" type="video/mp4" class="portrait">
+											Your browser does not support the video tag.
+										</video>
+
+										<video class="heroVideo landscape" poster="images/img/workout.jpg" muted playsinline preload
+											autoplay loop>
+											<source src="images/video/hero_vid_landscape.mp4" type="video/mp4" class="landscape">
+											Your browser does not support the video tag.
+										</video>
+										<div class="banner-tittle">
+											<h1>
+												Trainer Terms & Conditions
+											</h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="width-100">
+							<div class="terms-container">
+								<p align="center">
+									<strong><span class="ubqfittext"> UB<i>Q</i>FIT</span> Additional Terms for Trainers</strong>
+								</p>
+								<p align="center">
+									<strong> </strong>
+								</p>
+
+								<p>
+									These Additional Terms for Trainers (“Trainer Terms”) are incorporated by reference into the Terms of
+									Use. Any defined terms used herein but not defined herein shall have their respective meanings given
+									to them in the Terms of Use (the “Terms”). By using
+									the Service as a Trainer, you agree to, and acknowledge, these Trainer Terms.
+								</p>
+
+
+
+
+								<p>
+									<strong>Trainer Services and Responsibilities</strong>
+								</p>
+								<p>
+									<em>Services.</em> As a Trainer, you have the ability to create your own profile for other users of
+									the Service to access and review. These profiles are publicly viewable and used by unregistered
+									visitors and registered Trainees to find you.
+								</p>
+								<p>
+
+									Your profile should include information about your qualifications, teaching style, time zone (to match
+									schedules) and availability. To protect your privacy, DO NOT include specific location, phone numbers,
+									or any personal information. Photos must be non-identifiable;
+									there should not be any identifiable or locatable information shown in the background of the image. We
+									reserve the right, but do not assume the obligation, to review content for compliance with these Terms
+									prior to it being displayed on the
+									Service. You will be able to register, communicate, schedule and conduct Lessons with Trainees through
+									<span class="ubqfittext"> UB<i>Q</i>FIT</span> platform and leverage UBQFIT platform to provide and
+									enhance your teaching.
+
+
+
+								</p>
+								<p>
+									By registering for or using the Service, you warrant that you are of legal age and competent to enter
+									into a binding contract. Please note that Students must be at least 18 years of age. In order to keep
+									minors from using the Service and registering for
+									Lessons, we require accurate credit card information and payment.
+
+								</p>
+								<p>
+									You agree that you will not:
+
+								</p>
+
+								<div class="list-pad">
+									<p>
+										(i) use the Service in any manner to interfere with or attempt to interfere with the normal
+										operations of the Service or any user’s use of the Service, including by overloading, flooding,
+										spamming or crashing the Service or its underlying systems; </p>
+									<p>
+										(ii) post, distribute or use any content, or engage in any speech or activity that is libelous,
+										defamatory, invasive of privacy or publicity rights, vulgar, obscene, sexually explicit or
+										exploitative, harassing, bullying, threatening, stalking, profane,
+										indecent of otherwise objectionable;
+									</p>
+									<p>
+										(iii) use the Service in any manner that may give rise to any civil liability of UBQFIT
+									</p>
+									<p>
+										(iv) use the Service to advertise or solicit funds for goods or services (other than Lessons offered
+										through the Service; or
+									</p>
+									<p>
+										(v) impersonate or falsely suggest or claim an affiliation with any other person or entity.
+									</p>
+
+								</div>
+								<p>You further agree that:</p>
+								<div class="list-pad">
+									<p>
+										(vi) as a Trainer you will make every effort to meet your scheduled Lessons and commitments. In the
+										event that you must reschedule or miss a Lesson, you must immediately follow the cancelations
+										procedures on UBQFIT and submit a cancelation request.
+									</p>
+									<p>
+										(vii) You must conduct yourself in a professional courteous manner at all times and you will not use
+										offensive, obscene or indecent language in connection with your conduct of Lessons or use of the
+										Service.
+									</p>
+									<p>
+										(viii) You shall have the right to set class policies and guidelines as you deem appropriate for
+										your Trainees as long as they adhere to the Site’s terms. You shall not disclose any personal
+										information to your Trainees, other than as necessary for the
+										Lessons or to substantiate your fitness and teaching experience.
+									</p>
+									<p>
+										(ix) You will not request personal information from a Trainee or request an offline meeting or
+										conversation, whether an in-person meeting or online chat through another service.
+									</p>
+									<p>
+										(x) In the event that a Trainee requests such a meeting or provides inappropriate personal
+										information, you should report the incident at <a href="mailto:report@ubqfit.com"
+											target="_blank">Report</a>.
+									</p>
+									<p>
+										(xi) You will not violate any applicable law or encourage conduct that would constitute a criminal
+										offense
+									</p>
+
+								</div>
+								<p>
+									You are solely responsible for your Lesson content including instructional materials used or provided
+									in connection with the Lessons (“<strong> Trainer Content</strong> ”). You represent and warrant that
+									you own or have sufficient rights,
+									permissions and licenses in and to the Trainer Content so that you may use, post, perform, display,
+									transmit or reproduce such Trainer Content for use on the Service and to grant us the license herein.
+									You hereby grant to UBQFIT a perpetual,
+									royalty-free, non-exclusive, worldwide right and license to use, reproduce, distribute, perform,
+									display and transmit the Trainer Content as necessary for provision of the Service and as set forth in
+									these Terms.
+								</p>
+								<p>
+									<em> Authorization for Background Check.</em>By registering as a Trainer, you authorize UBQFIT to,
+									conduct a limited background check on you and that the results of such background check may be used by
+									us to determine whether you may offer
+									classes and services through the Service and register as a Trainer.
+								</p>
+
+								<div class="list-pad">
+									<p>
+										(i) You further release us and our third party service providers who may provide information to us
+										in performance of this background check from any and all liability or damages arising out of or in
+										connection with this background check. If required, you
+										agree to sign any other consent form as may be required in connection with this background check.
+									</p>
+									<p>
+										(ii) You understand and agree that if you do not provide, or you withdraw, your consent to this
+										background check, we may refuse to permit you to register as a member or Trainer on the Service or
+										suspend your use of the Service.
+									</p>
+									<p>
+										(iii) You agree that we may perform additional such background checks from time to time for so long
+										as you are registered as a member or use the Service. You understand that we will obtain such
+										background search from our third party service provider and
+										we are not responsible for the truth, accuracy or completeness of such search.
+									</p>
+									<p>
+										(iv) You represent that all information provided by you is truthful, accurate and complete so that
+										we may obtain such background check.
+									</p>
+									<p>
+										(v) You further understand and agree that the report is not intended to be a “consumer report” for
+										the purposes of the Fair Credit Reporting Act and that we are not acting as your employer or
+										engaging you as an independent contractor and therefore our
+										use of the background check results will not be used as a factor in determining eligibility for
+										employment.
+									</p>
+								</div>
+								<p> <em>Payments, Fees.</em></p>
+								<div class="list-pad">
+									<p>
+										(i) <em>Revenue Share.</em> You will be compensated based upon the amount of revenue UBQFIT derives
+										directly from your conducting Lessons. UBQFIT shall determine, in its sole and absolute discretion
+										the amount of compensation you shall
+										receive. Once your application is accepted you may review your revenue share percentage within your
+										specific income page. Revenue share percentages are applied to sessions and Paid Events revenue.
+										Paid Events transactions are applied Paypal’s
+										micro transactions processing fee of 5C plus 5%.
+									</p>
+									<p>
+										(ii) <em> Other Revenues.</em> Other ways Trainers may earn income on UBQFIT are through marketing
+										income (posting our link on social media platforms and getting paid for every click that leads to a
+										transaction) and donations income (where
+										fans and followers in their sole discretion submit funds to their trainer of choice. These two
+										sources of income are not exposed to any UBQFIT revenue share percentages.
+										<div class="list-pad">
+											<p>
+												a. Donations Income. Paypal micro transactions processing fee is applied to donations and net
+												amount is submitted to you alongside other earnings every two weeks.
+											</p>
+											<p>
+												b. Marketing Income. The opportunity to participate in generating marketing income is determined
+												through an application process and assessed on a case by case basis and with UBQFIT’s full
+												discretion. This income is also paid out with other earnings every
+												two weeks.
+											</p>
+
+										</div>
+									</p>
+									<p>
+										(iii) <em> Stripe.</em> All lesson (this excludes Paid Events) fees must be paid through UBQFIT
+										platform using the online payment service Stripe (at stripe.com). Strip is also used to process any
+										and all payments to you. You acknowledge
+										and agree that:
+										<div class="list-pad">
+											<p>
+												a. In order for a payment to be processed for you: (1) you must set up an account with Stripe as
+												set forth in the instructions forwarded to you upon setting up your Account as a Trainer, and
+												(2) your account must have a positive balance above $5.
+											</p>
+											<p>
+												b. For each payment that is made to you, an associated Stripe fee of $2.50 plus 0.25% of your
+												account balance.
+											</p>
+											<p>
+												Stripe charges a service charge of 30¢ plus 3.2% of payments processed for you.
+											</p>
+											<p>
+												If your account balance is
+												<div class="list-pad">
+													<p>
+														i. Less than -$5.00, then you shall be assessed a fee of 1.5% of the absolute value of your
+														account balance and any such balance including the aforementioned fee will be automatically
+														debited to your connected Stripe account by Stripe.
+													</p>
+													<p>
+														ii. Between -$5.00 and $5.00, no payments will be processed until the account balance is
+														outside of this range.
+													</p>
+												</div>
+
+											</p>
+											<p>
+												e. Once you have successfully set up an account with Stripe, any payments to you will be made
+												once every two weeks; provided that, any payments will be made after the corresponding services
+												have been rendered.
+											</p>
+
+										</div>
+									</p>
+									<p>
+										You acknowledge and agree that <span class="ubqfittext"> UB<i>Q</i>FIT</span> may offer refunds to
+										Trainees who are not fully satisfied with their experience, provided, however, that you will still
+										be paid your Lesson fee less the UBQFIT’s
+										Revenue Share for such Lessons.
+									</p>
+									<p>
+										You shall be solely responsible for reporting all income earned by you through the Service and the
+										payment of the appropriate federal, state and/or local taxes. If any sales tax is required by your
+										state or local jurisdiction, you will be solely responsible
+										for collecting and remitting any such taxes.
+									</p>
+								</div>
+
+								<p>
+									<em> Relationship with <span class="ubqfittext"> UB<i>Q</i>FIT</span>.</em> You agree that you are not
+									an employee, contractor or agent of or for UBQFIT . You do not have the authority to bind and you
+									shall not bind UBQFIT to any contractual
+									or other liability or obligation. You agree that you will use the Service exclusively for Lessons for
+									Trainees identified or who identify and contact you through the Service, including payment through the
+									Service. You will not attempt to circumnavigate
+									the Service and conduct Lessons or accept or receive any payment for Lessons other than through the
+									Service.
+								</p>
+								<p>
+									<strong>Intellectual Property </strong>
+								</p>
+								<p>
+									<em>Public Trainer Content, Recordings.</em> <span class="ubqfittext"> UB<i>Q</i>FIT</span> retains
+									ownership of all content created by the Trainee and you that is embodied in our records of the Lesson,
+									except that any content created during
+									a private lesson shall not be recorded. UBQFIT shall have an exclusive, transferable, irrevocable
+									license to use, disseminate, and display such content pursuant to the Terms.
+
+								</p>
+
+								<p>
+									<strong>Cancelation Policy and Fees</strong>
+								</p>
+
+
+								<div class="list-pad">
+									<p>
+										(i) <span class="ubqfittext"> UB<i>Q</i>FIT</span> does not offer any cash refunds in any
+										circumstance.
+									</p>
+									<p>
+										(ii) <u>Paid Events.</u> No cancelation option is offered for paid events. Trainer will be charged a
+										fee of $150 for not showing up to their scheduled paid event. </p>
+									<p>
+										(iii) <u>Calendar Session Cancelation 24 Hours Prior to Start Time. </u> Trainer will be charged a
+										$5.00 fee if they cancel a calendared Lesson within at least 24 hours prior to the start time. If
+										Trainee cancels, Trainer will not receive
+										any compensation for the canceled Lesson.
+
+									</p>
+									<p>
+										(iv) <u>Calendar Session Cancelation within 24 Hours of Start Time or No Show for the Lesson.</u>
+										Trainer will be charged the Lesson value and a $5.00 fee if they cancel a Lesson within less than
+										24 hours of the start time for such Lesson.
+										In the case that the Trainee cancels or does not show up for the Lesson, the Trainer will receive
+										payment as if such Trainee attended such Lesson.
+
+									</p>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+		<div class="width-100">
+			<div class="link-session relative">
+				<img src="images/screen-bg-1.png" class="link-banner" width="100%" height="600px">
+				<div class="contact-link">
+					<h3>
+						Not just fit, UBQFIT.
+					</h3>
+					<p>
+						Download our mobile app and revolutionize your fitness experience.
+					</p>
+					<!-- <div class="footer-form-wrapper form-field relative margin-bottom-20">
+                  <input id="homePhoneNumber" type="tel" [(ngModel)]="phoneNumber"
+                      (keyup)="phoneNumberChange('keyup');" placeholder="Phone number" class="form-control">
+                  <div class="error" *ngIf="saveFlag && phoneNumber && !isPhoneNumberValid">
+                      Phone Number Invalid
+                  </div>
+                  <button class="cmg-soon" (click)="phoneNumberChange('sentLink')">Send Link</button>
+
+              </div> -->
+					<div id="textpuff-widget" class="relative margin-bottom-20"></div>
+					<div class="app-store">
+						<a href="https://apps.apple.com/us/app/ubqfit/id1441253233" target="_blank" rel="noreferrer noopener">
+							<img src="images/apple.png">
+						</a>
+						<a href="https://play.google.com/store/apps/details?id=com.ubqfitinc.ubqfit&hl=en_US" target="_blank"
+							rel="noreferrer noopener">
+							<img src="images/googleplay.png">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<ul>
+
+					<!-- <li>
+            <a (click)="openZendesk()" href="javascript:void(0)">Start a live chat</a>
+          </li>
+          <li>
+            <a (click)="openZendesk()" href="javascript:void(0)">Visit Support Center</a>
+          </li> -->
+					<ul class="socail-icon">
+						<h4>
+							Our Social
+						</h4>
+						<li>
+							<a class="fb" href="https://www.facebook.com/ubqfit" target="_blank" rel="noreferrer">fb</a>
+						</li>
+						<li>
+							<a class="instagram" href="https://www.instagram.com/ubqfit/" target="_blank"
+								rel="noreferrer">Instagram</a>
+						</li>
+						<li>
+							<a class="twitter" href="https://twitter.com/ubqfit" target="_blank" rel="noreferrer">twitter</a>
+						</li>
+						<li>
+							<a class="linkedin" href="https://www.linkedin.com/company/ubqfit/" target="_blank"
+								rel="noreferrer">linkedin</a>
+						</li>
+						<!-- <li>
+                              <a class="pintrest" href="javascript:void(0)">pintrest</a>
+                            </li> -->
+					</ul>
+				</ul>
+				<ul>
+					<h4>
+						Join Us
+					</h4>
+					<li>
+						<a href="trainer.html">Trainers</a>
+					</li>
+					<li>
+						<a href="trainee.html">Trainees</a>
+					</li>
+					<li>
+						<a href="testimonials.html">Testimonials</a>
+					</li>
+				</ul>
+				<ul>
+					<h4>
+						About
+					</h4>
+					<li>
+						<a href="ourstory.html">Our Story</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+				</ul>
+				<ul>
+					<h4>
+						Support
+					</h4>
+					<li>
+						<a href="contactus.html">Contact Us</a>
+					</li>
+					<!-- <li>
+                            <a (click)="openFaq()" href="javascript:void(0)">FAQs</a>
+                          </li> -->
+					<li>
+						<a class="helpdesk" href="javascript:void(0)">Chat</a>
+					</li>
+					<!-- <li>
+                            <a href="javascript:void(0)"><b>Phone</b>: +1 (866)-678-8888</a>
+                        </li> -->
+				</ul>
+			</footer>
+			<div class="copy-right">
+				<ul>
+					<p>
+						© 2019 UBQFIT
+					</p>
+					<li>
+						<a href="privacy-policy.html">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="terms-conditions.html">Terms & Conditions</a>
+					</li>
+					<li>
+						<a href="dmca-policy.html">DMCA Policy</a>
+					</li>
+				</ul>
+			</div>
+			<div class="help-desk">
+				<a (click)="!isZenDeskOpend ? openZendesk() : closeZendesk()" class="support" href="javascript:void(0)">Chat</a>
+			</div>
+		</div>
+
+	</div>
+	<!--   containers -->
+
+	<div class="footer-version">
+		<p>
+			V 2.1
+		</p>
+	</div>
+	<!-- PreLaunch Modal step 1-->
+	<div class="modal-backdrop-prelaunch">
+		<div class="modal-container">
+			<div class="modal-popup">
+
+				<div class="modal-head">
+					<button class="close-btn"> close </button>
+				</div>
+				<form id="newModalForm" style="padding-top:16px;">
+                    <p>
+                        First 100 get a 1-on-1 live training session for 95% off on the UBQFIT app with our exciting
+                        certified vetted trainers.
+                    </p>
+                    <center>
+                        <p style="text-align:center;"><i><b>Not just fit, UBQFIT!</b></i></p>
+                    </center>
+                    <br>
+                    <div class="modal-body floating-form">
+
+                        <div class="width-100 floating-label">
+                            <input class="form-field floating-input" name="firstname" id="firstname" required
+                                type="text" placeholder=" ">
+                            <span class="highlight"></span>
+                            <label class="floading-label" for="name">First Name</label>
+                        </div>
+                        <div class="width-100 floating-label">
+                            <input class="form-field floating-input" name="lastname" id="lastname" required type="text"
+                                placeholder=" ">
+                            <span class="highlight"></span>
+                            <label class="floading-label" for="name">Last Name</label>
+                        </div>
+
+                        <div class="width-100 floating-label">
+                            <input class="form-field floating-input" name="email" id="email" required type="email"
+                                placeholder=" ">
+                            <span class="highlight"></span>
+                            <label class="floading-label" for="name">Email Address</label>
+                        </div>
+
+                        <div class="width-100 floating-label">
+                            <input id="phoneNumber" class="form-field floating-input" name="phone" required type="text"
+                                autocomplete="false" placeholder="Phone Number">
+                            <span class="highlight"></span>
+                            <!-- <label class="floading-label left-50" for="name">Phone Number</label> -->
+                        </div>
+
+                        <div class="width-100 select-box floating-label">
+                            <div>
+                                <span class="highlight"></span>
+                                <label class="floading-label">I am</label>
+                                <div class="multi-select-check-box" style="padding-top: 8px;padding-bottom: 8px;">
+                                    <!--<label><input type="checkbox" name="personas" onChange="multiSelectChanged('personas1')" value="1">a fitness writer</label>-->
+                                    <br>
+                                    <label style="height:25px;padding:0;"><input style="margin:6px;" type="checkbox"
+                                            name="personas" onChange="multiSelectChanged('personas2')" value="2">looking for a trainer</label>
+                                    <label style="height:25px;padding:0;"><input style="margin:6px;" type="checkbox"
+                                            name="personas" onChange="multiSelectChanged('personas3')" value="3">a trainer</label>
+                                    <label style="height:25px;padding:0;"><input style="margin:6px;" type="checkbox"
+                                            name="personas" onChange="multiSelectChanged('personas4')" value="4">an influencer</label>
+                                    <!--<label><input type="checkbox" name="personas" onChange="multiSelectChanged('personas5')" value="5">other</label>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: none;" id="otherPersonContainer" class="width-100 floating-label">
+                            <input class="form-field floating-input" name="other" id="otherPerson" required type="text"
+                                placeholder=" ">
+                            <span class="highlight"></span>
+                            <label class="floading-label" for="name">Others</label>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="second-primary-btn align-center review_btn_prelaunch-two"
+                            style="height: 32px;width: auto;">Confirm</button>
+                    </div>
+                </form>
+			</div>
+		</div>
+	</div>
+
+	<!-- PreLaunch Modal step 2-->
+	<div class="modal-backdrop-prelaunch-two">
+		<div class="modal-container">
+			<div class="modal-popup">
+				<div class="modal-head">
+					<h1 class="margin-bottom-20">
+						Success
+					</h1>
+					<button class="close-btn review_btn_prelaunch-two"> close </button>
+				</div>
+				<div class="modal-body margin-bottom-30">
+					<div class="width-100">
+						<p>
+							Thank you! We will get back to you soon with details.
+						</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="second-primary-btn align-center"
+						onclick="closeModal('modal-backdrop-prelaunch-two')">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- js Files -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script type='text/javascript'>
+		(function () {
+			var tp = document.createElement('script');
+			tp.src = 'https://textpuff.com/textwidget/js/textpuffv2.js';
+			tp.type = 'text/javascript';
+			tp.async = 'true';
+			tp.onload = tp.onreadystatechange = function () {
+				var rs = this.readyState;
+				if (rs && rs != 'complete' && rs != 'loaded') return;
+				try {
+					var lng = 'en';
+					var sbtp = '';
+					verify._vd('b88dbd22ff117ae209becaf4c24950d293b3d2b5', 'tp1', sbtp, lng);
+				} catch (e) {}
+			};
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(tp, s);
+		})();
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+	<!-- intel-input phone number validation -->
+	<script src="js/intl-tel-input/build/js/intlTelInput.js"></script>
+	<!-- Start of ubqfit Zendesk Widget script -->
+	<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=70d2f53e-c4b9-48da-bc27-e5646f666d9d">
+	</script>
+	<!-- End of ubqfit Zendesk Widget script -->
+	<script src="js/custom.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/services.js"></script>
+
+	<script>
+		moment().format();
+	</script>
+	<script>
+		$(function () {
+			$('.iframe_close').click(function () {
+				$('iframe').attr('src', $('iframe').attr('src'));
+			});
+		});
+
+		function loadDefaultImage(obj) {
+			var id = $(obj).attr('data-id');
+			$(obj).addClass('hide');
+			$('#' + id).removeClass('hide');
+		}
+
+
+		// URL Redirect
+
+		function goToURL() {
+			//window.open('https://ubqfit.com/', '_blank');
+		}
+	</script>
+</body>
+<style type="text/css">
+	.src-component-launcher-WidgetLauncher-wrapper {
+		display: none;
+	}
+</style>
+
+</html>

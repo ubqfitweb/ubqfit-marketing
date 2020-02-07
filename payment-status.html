@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>UBQFIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- Required meta tags -->
+  <meta name=keywords content="fitness app,fitness partner,gym,gym trainer app, health and fitness app, workout app, health app">
+  <meta name=description content="Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments">
+  <meta property=og:image title="UBQFIT" content=images/UBQFIT-Banner.png />
+  <link rel=image_src title="UBQFIT" href="images/UBQFIT-Banner.png" />
+  <meta name="author" content="UBQFIT">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0e0e12" />
+  <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2546244208988010');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2546244208988010&ev=PageView&noscript=1"
+    /></noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- Open Graphic Tags -->
+  <meta property="og:title" content="UBQFIT">
+  <meta property="og:site_name" content="UBQFIT">
+  <meta property="og:url" content="https://ubqfit.com/">
+  <meta property="og:description" content="Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments">
+  <meta property="og:video" content="images/video/hero_vid_landscape.mp4" />
+  <meta property="og:video:secure_url" content="images/video/hero_vid_landscape.mp4" />
+  <meta property="og:video:type" content="application/x-shockwave-flash" />
+  <meta property="og:video:width" content="400" />
+  <meta property="og:video:height" content="300" />
+
+
+  <!-- google meta -->
+  <meta name="google-signin-client_id" content="9584718907-nvbobbkft3ln4ackb5hlkn8jl27khf1l.apps.googleusercontent.com">
+  <meta name="google-signin-client_id"
+    content="397289741886-ptcimf1bctecvm562fi2j2eukl2kgad5.apps.googleusercontent.com">
+  <!-- google INIT -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/services.js"></script>
+  <!-- Pintrest meta -->
+  <meta name="p:domain_verify" content="ada36ea9b646725c3c922c8d964104bf" />
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="/js/intl-tel-input/build/css/intlTelInput.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+
+  <style>
+    h1 {
+      font-family: 'Open Sans'sans-serif;
+      font-size: 24px;
+      line-height: 1.5em;
+      letter-spacing: -0.05em;
+      margin-bottom: 20px;
+      padding: .1em 0;
+      color: #444;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    /* h1:before,
+    h1:after {
+      content: "";
+      position: relative;
+      display: inline-block;
+      width: 50%;
+      height: 1px;
+      vertical-align: middle;
+      background: #f0f0f0;
+    }
+
+    h1:before {
+      left: -.5em;
+      margin: 0 0 0 -50%;
+    } */
+
+    h1:after {
+      left: .5em;
+      margin: 0 -50% 0 0;
+    }
+
+    h1>span {
+      display: inline-block;
+      vertical-align: middle;
+      white-space: normal;
+    }
+
+    p {
+      display: block;
+      font-size: 18px;
+      line-height: 1.5em;
+      margin-bottom: 22px;
+      text-align: center;
+    }
+
+
+    /** page structure **/
+    #w {
+      display: block;
+      width: 750px;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+
+    #content {
+      display: block;
+      width: 100%;
+      background: #fff;
+      padding: 25px 20px;
+      padding-bottom: 35px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    }
+
+    /** notifications **/
+    .notify {
+      display: block;
+      background: #000;
+      padding: 12px 18px;
+      max-width: 400px;
+      margin: 0 auto;
+      cursor: pointer;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      margin-bottom: 20px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+      color: #fff;
+      display: none;
+    }
+
+    .notify h1 {
+      margin-bottom: 6px;
+    }
+
+    .successbox h1 {
+      /* color: #8bc67e; */
+      color: #df1f26;
+    }
+
+    .errorbox h1 {
+      color: #df1f26;
+    }
+
+    .pendingbox h1 {
+      color: #df1f26;
+    }
+
+    .infobox h1 {
+      color: #df1f26;
+    }
+
+
+    .successbox h1:before,
+    .successbox h1:after {
+      background: #cad8a9;
+    }
+
+    .errorbox h1:before,
+    .errorbox h1:after {
+      background: #d6b8b7;
+    }
+
+    .notify .alerticon {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .alerticon img {
+      height: 80px;
+    }
+    .body-page-wrapper{
+      background: #000;
+      height: 100vh;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+align-content: center;
+justify-content: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="body-page-wrapper">
+  <!-- <h2>Payment success</h2> -->
+  <div class="notify successbox">
+
+    <span class="alerticon"><img src="images/check.png" alt="checkmark" /></span>
+    <h1>Donation Success!</h1>
+    <!-- <p>Amount will be credited to the recipeint account on his next billing cycle.</p> -->
+  </div>
+  <div class="notify errorbox">
+
+    <span class="alerticon"><img src="images/error.png" alt="failed" /></span>
+    <h1>Donation failed!</h1>
+    <p>Please try again later.</p>
+  </div>
+  <div class="notify pendingbox">
+
+    <span class="alerticon"><img src="images/alert.png" alt="pending" /></span>
+    <h1>Donation Pending!</h1>
+    <p>We have got your request. Your payment will be processed shortly.</p>
+  </div>
+  <div class="notify infobox">
+
+    <span class="alerticon"><img src="images/alert.png" alt="info" /></span>
+    <h1>Info!</h1>
+    <p>Something went wrong, <br>Please try again later.</p>
+  </div>
+</div>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('status');
+    if (status == "COMPLETED") {
+      document.getElementsByClassName("successbox")[0].style.display = "block";
+    } else if (status == "DECLINED") {
+      document.getElementsByClassName("errorbox")[0].style.display = "block";
+    } else if (status == "PENDING") {
+      document.getElementsByClassName("pendingbox")[0].style.display = "block";
+    } else {
+      document.getElementsByClassName("infobox")[0].style.display = "block";
+    }
+  </script>
+</body>
+
+</html>
