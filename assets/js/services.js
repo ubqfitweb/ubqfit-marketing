@@ -233,7 +233,7 @@ function loadInstagram(instagram) {
         if (value.type === 'video') {
             html += '<video class="watcher pointer landscape" poster="' + value.lowResolution_Media_Url + '" width="100%" height="100%" muted playsinline loop preload="auto" autoplay><source src="' + value.standard_Media_Url + '" type="video/mp4" class="landscape">Your browser does not support the video tag.</video>'
         } else {
-            html += '<img class="watcher pointer" width="100%" src="' + value.standard_Media_Url + '">';
+            html += '<img class="watcher pointer" width="100%" src="' + value.standard_Media_Url + '" alt="Image from the UBQFIT Instagram account.">';
         }
         html += '<a target="new" href="' + value.instagramLink + '"><span class="instagram-feed-hover"></span></a>';
         html += '</div>';
