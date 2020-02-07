@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
 
@@ -5,12 +7,12 @@
     <meta charset="utf-8">
     <title>UBQFIT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ site.url }}{{ site.baseurl }}/assets/images/favicon.ico">
   <!-- Required meta tags -->
   <meta name=keywords content="fitness app,fitness partner,gym,gym trainer app, health and fitness app, workout app, health app">
   <meta name=description content="Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments">
-  <meta property=og:image title="UBQFIT" content=images/UBQFIT-Banner.png />
-  <link rel=image_src title="UBQFIT" href="images/UBQFIT-Banner.png" />
+  <meta property=og:image title="UBQFIT" content="{{ site.url }}{{ site.baseurl }}/assets/images/UBQFIT-Banner.png" />
+  <link rel=image_src title="UBQFIT" href="{{ site.url }}{{ site.baseurl }}/assets/images/UBQFIT-Banner.png" />
   <meta name="author" content="UBQFIT">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0e0e12" />
@@ -36,8 +38,8 @@
   <meta property="og:site_name" content="UBQFIT">
   <meta property="og:url" content="https://ubqfit.com/">
   <meta property="og:description" content="Your fitness partner - Live 1-on-1 Workouts. Train when you want, where you want, without commitments">
-  <meta property="og:video" content="images/video/hero_vid_landscape.mp4" />
-  <meta property="og:video:secure_url" content="images/video/hero_vid_landscape.mp4" />
+  <meta property="og:video" content="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_landscape.mp4" />
+  <meta property="og:video:secure_url" content="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_landscape.mp4" />
   <meta property="og:video:type" content="application/x-shockwave-flash" />
   <meta property="og:video:width" content="400" />
   <meta property="og:video:height" content="300" />
@@ -81,10 +83,10 @@
                 "type": data.type
             }
             if (formatData.token == null || formatData.eventid == null || formatData.amount == null) {
-                window.location.href = "index.html";
+                window.location.href = "{{ site.url }}{{ site.baseurl }}/index.html";
             } else {
                 localStorage.setItem("eventPayData", JSON.stringify(formatData));
-                window.location.href = "pay-join-event.html";
+                window.location.href = "{{ site.url }}{{ site.baseurl }}/pay-join-event.html";
             }
         }
     </script>
