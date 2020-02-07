@@ -94,15 +94,15 @@ var page = path;
 if (page == '/blog-detail/index.html' || page == '/ubqfit-marketing/blog-detail/index.html') {
     var blogId = findGetParameter('blog-id');
     getBlogDetail(blogId);
-} else if (page == 'index.html' || page == '') {
+} else if (page == 'index.html' || page == '' || page == '/') {
     getTrendingSections();
     getInstagramSections();
 } else if (page == '/blog/' || page == '/ubqfit-marketing/blog/') {
     getBlogList(1);
-} else if (page == '/trainer/' || page == '/trainee/' || page == '/busy-mommy/' || page == '/busy-executive/') {
+} else if (page == '/trainer.html' || page == '/trainee.html' || page == '/busy-mommy.html' || page == '/busy-executive.html') {
     getInstagramSections();
 }
-else if (page == '/pricing/' || page == "/ubqfit-marketing/pricing/") {
+else if (page == '/pricing.html' || page == "/ubqfit-marketing/pricing.html") {
     loadPricing();
 }
 
