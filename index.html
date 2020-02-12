@@ -2,6 +2,8 @@
 layout: default
 hero_video_portrait: "/assets/images/hero_vid_portrait.mp4"
 hero_video_landscape: "/assets/images/7-second-test.mp4"
+hero_video_portrait_poster: "/assets/images/hero_vid_portrait.jpg"
+hero_video_landscape_poster: "/assets/images/7-second-test.jpg"
 hero_video_title: Live 1-on-1 Workouts
 hero_video_description: Train when you want, where you want, without commitments.
 hero_video_button_label: Watch Video
@@ -24,7 +26,7 @@ section_three_description: Lead a fitness event or accept 1-on-1 training sessio
             <div class="width-100 home-banner heroContainer">
                 <div class="width-100">
                     <video class="heroVideo portrait"
-                        poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.jpg" muted playsinline
+                        poster="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait_poster }}" muted playsinline
                         preload autoplay loop>
                         <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait }}"
                             type="video/mp4" class="portrait">
@@ -32,7 +34,7 @@ section_three_description: Lead a fitness event or accept 1-on-1 training sessio
                     </video>
 
                     <video class="heroVideo landscape"
-                        poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.jpg" muted playsinline
+                        poster="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape_poster }}" muted playsinline
                         preload autoplay loop>
                         <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape }}"
                             type="video/mp4" class="landscape">

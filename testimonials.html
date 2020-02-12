@@ -2,6 +2,8 @@
 layout: default
 hero_video_portrait: "/assets/images/hero_vid_portrait.mp4"
 hero_video_landscape: "/assets/images/hero_vid_landscape.mp4"
+hero_video_portrait_poster: "/assets/images/hero_vid_portrait.jpg"
+hero_video_landscape_poster: "/assets/images/hero_vid_landscape.jpg"
 hero_video_title: Testimonials
 hero_video_description: See what others are saying.
 
@@ -40,14 +42,14 @@ hero_video_description: See what others are saying.
               <div class="width-100 home-banner heroContainer">
                 <div class="width-100">
                   <video class="heroVideo portrait"
-                    poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" muted playsinline preload
+                    poster="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait_poster }}" muted playsinline preload
                     autoplay loop>
                     <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait }}"
                       type="video/mp4" class="portrait">
                     Your browser does not support the video tag.
                   </video>
                   <video class="heroVideo landscape"
-                    poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" muted playsinline preload
+                    poster="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape_poster }}" muted playsinline preload
                     autoplay loop>
                     <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape }}"
                       type="video/mp4" class="landscape">

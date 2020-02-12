@@ -2,6 +2,8 @@
 layout: default
 hero_video_portrait: "/assets/images/hero_vid_portrait.mp4"
 hero_video_landscape: "/assets/images/hero_vid_landscape.mp4"
+hero_video_portrait_poster: "/assets/images/hero_vid_portrait.jpg"
+hero_video_landscape_poster: "/assets/images/hero_vid_landscape.jpg"
 hero_video_title: Terms & Conditions
 hero_video_description: Terms & Conditions.
 section_title: UBQFIT Terms & Conditions
@@ -480,14 +482,14 @@ submit_button_text: Send
             <div class="row margin-0 relative">
               <div class="width-100 home-banner heroContainer">
                 <div class="width-100">
-                  <video class="heroVideo portrait" poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" muted playsinline preload autoplay
+                  <video class="heroVideo portrait" poster="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait_poster }}" muted playsinline preload autoplay
                     loop>
                     <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait }}" type="video/mp4" class="portrait">
                     Your browser does not support the video tag.
                   </video>
-                  <video class="heroVideo landscape" poster="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape }}" muted playsinline preload autoplay
+                  <video class="heroVideo landscape" poster="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape_poster }}" muted playsinline preload autoplay
                     loop>
-                    <source src="{{ site.url }}{{ site.baseurl }}/assets/images/video/hero_vid_landscape.mp4" type="video/mp4" class="landscape">
+                    <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape }}" type="video/mp4" class="landscape">
                     Your browser does not support the video tag.
                   </video>
                   <div class="banner-tittle">

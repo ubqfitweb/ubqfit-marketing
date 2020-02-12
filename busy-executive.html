@@ -2,6 +2,8 @@
 layout: landing-page-busy
 hero_video_portrait: "/assets/images/busy-executive-verticle.mp4"
 hero_video_landscape: "/assets/images/busy-executive.mp4"
+hero_video_portrait_poster: "/assets/images/busy-executive-verticle.jpg"
+hero_video_landscape_poster: "/assets/images/busy-executive.jpg"
 hero_video_title: Trainee
 hero_video_description: Train where you want, when you want.
 section_one_image: "/assets/images/trainee-1.png"
@@ -65,14 +67,14 @@ section_five_description: Book training sessions with your favorite trainer 30 d
                 <div class="width-100 home-banner heroContainer">
                   <div class="width-100">
                     <video class="heroVideo portrait"
-                      poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" muted playsinline preload
+                      poster="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait_poster }}" muted playsinline preload
                       autoplay loop>
                       <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_portrait }}"
                         type="video/mp4" class="portrait">
                       Your browser does not support the video tag.
                     </video>
                     <video class="heroVideo landscape"
-                      poster="{{ site.url }}{{ site.baseurl }}/assets/images/home-banner.png" muted playsinline preload
+                      poster="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape_poster }}" muted playsinline preload
                       autoplay loop>
                       <source src="{{ site.url }}{{ site.baseurl }}{{ page.hero_video_landscape }}"
                         type="video/mp4" class="landscape">
